@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fully Funded? Checking Michigan's School Pension Claim</title>
+<meta name="description" content="An independent check of the Nov. 17, 2026 announcement that Michigan's school pension (MPSERS) is fully funded ahead of schedule: what the state's own reports say, claim by claim, and what the fund owns.">
+<link rel="canonical" href="https://mpsers.karpowitsch.org/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mpsers.karpowitsch.org/">
+<meta property="og:title" content="Fully funded? Checking Michigan's school pension claim">
+<meta property="og:description" content="It was 74.6% funded at the last official count. Full funding by 2030 is a forecast, and the state's own consultant first made it (as 2031) in January 2025.">
+<meta property="og:image" content="https://mpsers.karpowitsch.org/assets/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fully funded? Checking Michigan's school pension claim">
+<meta name="twitter:description" content="74.6% funded at the last official count. 2030 is a forecast. Here's what holds up and what doesn't.">
+<meta name="twitter:image" content="https://mpsers.karpowitsch.org/assets/share.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f2a44'/%3E%3Ctext x='16' y='22' font-size='17' font-family='Arial,sans-serif' font-weight='700' fill='%23ffffff' text-anchor='middle'%3E%25%3C/text%3E%3C/svg%3E">
+<script>
+  // Apply a saved theme before first paint (no flash).
+  try{var t=localStorage.getItem('theme'); if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
+</script>
+<style>
+  :root{
+    color-scheme:light;
+    --bg:#faf9f6; --surface:#ffffff; --surface-2:#f4f2ec; --viz:#fcfcfb;
+    --ink:#161821; --ink-2:#464b58; --muted:#6c707b; --border:#e7e4dc; --border-2:#d9d5cb;
+    --grid:#e1e0d9; --axis:#c3c2b7;
+    --brand:#1f2a44; --brand-ink:#1f2a44; --accent:#b1201f;
+    --s1:#2a78d6; --s2:#eb6834;
+    --good:#0ca30c; --good-soft:#e7f2e8; --warn:#c98500; --warn-soft:#fbf1d9; --crit:#d03b3b; --crit-soft:#fbe9e7; --neut-soft:#eeece6;
+    --shadow:0 1px 2px rgba(20,22,33,.05), 0 6px 22px rgba(20,22,33,.06);
+    --maxw:1080px; --prose:70ch; --radius:14px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --bg:#131418; --surface:#1c1e24; --surface-2:#22252c; --viz:#191a19;
+      --ink:#f3f2ee; --ink-2:#c7c8cf; --muted:#9a9ca6; --border:#2c2f38; --border-2:#3a3e49;
+      --grid:#2c2c2a; --axis:#383835;
+      --brand:#9db6ea; --brand-ink:#c9d6f2; --accent:#f08a86;
+      --s1:#3987e5; --s2:#d95926;
+      --good:#0ca30c; --good-soft:#1c2a1e; --warn:#fab219; --warn-soft:#2e2717; --crit:#e66767; --crit-soft:#33221f; --neut-soft:#26282e;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 26px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --bg:#131418; --surface:#1c1e24; --surface-2:#22252c; --viz:#191a19;
+    --ink:#f3f2ee; --ink-2:#c7c8cf; --muted:#9a9ca6; --border:#2c2f38; --border-2:#3a3e49;
+    --grid:#2c2c2a; --axis:#383835;
+    --brand:#9db6ea; --brand-ink:#c9d6f2; --accent:#f08a86;
+    --s1:#3987e5; --s2:#d95926;
+    --good:#0ca30c; --good-soft:#1c2a1e; --warn:#fab219; --warn-soft:#2e2717; --crit:#e66767; --crit-soft:#33221f; --neut-soft:#26282e;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 26px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:400 17px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  h1,h2,h3{line-height:1.18;letter-spacing:-.012em;color:var(--ink)}
+  a{color:var(--s1)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+  @media(min-width:600px){.wrap{padding:0 22px}}
+  .prose{max-width:var(--prose)}
+  section{padding:52px 0;border-top:1px solid var(--border)}
+  .eyebrow{font:700 12.5px/1.3 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .lead{font-size:19px;color:var(--ink-2)}
+  .muted{color:var(--muted)}
+  .small{font-size:14px}
+  blockquote{margin:18px 0;padding:12px 18px;border-left:3px solid var(--border-2);background:var(--surface);border-radius:0 10px 10px 0;color:var(--ink-2)}
+  blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:13.5px;color:var(--muted)}
+
+  /* header */
+  header.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 90%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--border)}
+  .nav{display:flex;align-items:center;gap:18px;height:56px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;color:var(--brand-ink);text-decoration:none;white-space:nowrap}
+  .brand .mk{width:26px;height:26px;border-radius:7px;background:#1f2a44;color:#fff;display:grid;place-items:center;font:700 14px Arial,sans-serif}
+  .nav .links{display:flex;gap:16px;margin-left:auto;align-items:center}
+  .nav a.link{color:var(--ink-2);text-decoration:none;font-size:14.5px;font-weight:600}
+  .nav a.link:hover{color:var(--ink)}
+  .iconbtn{background:none;border:1px solid var(--border-2);color:var(--ink-2);border-radius:8px;width:36px;height:32px;cursor:pointer;font-size:15px}
+  @media(max-width:820px){ .nav .links a.link{display:none} }
+
+  /* hero */
+  .hero{padding:56px 0 40px}
+  .hero h1{font-size:clamp(32px,5.6vw,54px);font-weight:800;margin:.35em 0 .3em;letter-spacing:-.02em;max-width:22ch}
+  .hero .sub{font-size:clamp(17.5px,2.2vw,21px);color:var(--ink-2);max-width:58ch}
+  .stamp{margin-top:14px;font-size:13.5px;color:var(--muted)}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 20px 18px;box-shadow:var(--shadow)}
+  .kpi .n{font:800 clamp(30px,4.6vw,42px)/1 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:-.02em;color:var(--brand-ink)}
+  .kpi .l{margin-top:9px;font-size:14px;color:var(--ink-2);line-height:1.45}
+  @media(max-width:760px){ .kpis{grid-template-columns:1fr} }
+
+  h2.sec{font-size:clamp(24px,3.4vw,32px);font-weight:800;margin:.15em 0 .1em}
+  h2.sec + .lead{margin-top:10px}
+  h3{font-size:19px;margin:30px 0 6px}
+
+  /* verdict scorecard */
+  .cards{display:grid;gap:14px;margin-top:26px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);
+    display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:8px 22px;align-items:start}
+  .card .claim{font-weight:700;font-size:16.5px;line-height:1.4}
+  .card .claim q{quotes:"\201C" "\201D"}
+  .card .finding{grid-column:1/2;color:var(--ink-2);font-size:15.5px}
+  .card .verdict{grid-column:2/3;grid-row:1/3;justify-self:end}
+  @media(max-width:680px){ .card{grid-template-columns:1fr} .card .verdict{grid-column:1;grid-row:auto;justify-self:start} }
+  .chip{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:6px 12px 6px 8px;font:700 13.5px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);white-space:nowrap}
+  .chip .ic{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800;flex:none}
+  .chip.good{background:var(--good-soft)} .chip.good .ic{background:var(--good)}
+  .chip.warn{background:var(--warn-soft)} .chip.warn .ic{background:var(--warn);color:#0b0b0b}
+  .chip.crit{background:var(--crit-soft)} .chip.crit .ic{background:var(--crit)}
+  .chip.neut{background:var(--neut-soft)} .chip.neut .ic{background:#898781}
+
+  /* figures */
+  figure{margin:26px 0 0;background:var(--viz);border:1px solid var(--border);border-radius:var(--radius);padding:20px 20px 16px;box-shadow:var(--shadow)}
+  figure .cap{font-weight:700;font-size:15.5px;margin-bottom:2px}
+  figure .subcap{color:var(--muted);font-size:13.5px;margin-bottom:12px}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;margin:4px 0 14px;font-size:13.5px;color:var(--ink-2)}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+  .chart svg{display:block;width:100%;height:auto;overflow:visible}
+  .chart text{fill:var(--muted);font:12.5px system-ui,-apple-system,"Segoe UI",sans-serif}
+  .chart text.lab{fill:var(--ink);font-weight:700}
+  .chart text.lab2{fill:var(--ink-2);font-weight:600}
+  .chart .grid line{stroke:var(--grid);stroke-width:1}
+  .chart .base{stroke:var(--axis);stroke-width:1}
+  .chart .ref{stroke:var(--ink-2);stroke-width:1.5}
+  .chart .line{fill:none;stroke:var(--s1);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+  .chart .area{fill:var(--s1);opacity:.10}
+  .chart .dot{fill:var(--s1);stroke:var(--viz);stroke-width:2}
+  .chart .col{fill:var(--s1)}
+  .chart .col:hover,.chart .col:focus{opacity:.82;outline:none}
+  .chart .xh{stroke:var(--ink-2);stroke-width:1;opacity:0}
+  .chart .hit{fill:transparent;cursor:crosshair}
+  .chart [tabindex]:focus-visible{outline:2px solid var(--s1);outline-offset:2px}
+  .note{margin-top:12px;font-size:13px;color:var(--muted)}
+  details.tv{margin-top:12px}
+  details.tv summary{cursor:pointer;font-size:13.5px;font-weight:650;color:var(--ink-2)}
+
+  /* horizontal bars */
+  .bars{display:flex;flex-direction:column;gap:12px}
+  .brow .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:4px}
+  .brow .name{font-weight:600;font-size:14.5px;color:var(--ink)}
+  .brow .name small{color:var(--muted);font-weight:500}
+  .brow .val{font-weight:750;font-size:14.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .track{height:18px;display:flex;align-items:center}
+  .bar{height:18px;border-radius:0 4px 4px 0;min-width:2px;cursor:default}
+  .bar.p{background:var(--s1)} .bar.q{background:var(--s2)}
+  .bar:hover,.bar:focus{opacity:.82;outline:none}
+  .bar:focus-visible{outline:2px solid var(--s1);outline-offset:2px}
+
+  /* tables */
+  .tablewrap{overflow-x:auto;margin-top:22px;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;min-width:520px;background:var(--surface);font-size:15px}
+  thead th{background:#1f2a44;color:#fff;text-align:right;padding:11px 14px;font-size:13.5px;font-weight:700;white-space:nowrap}
+  thead th:first-child{text-align:left}
+  tbody td{padding:10px 14px;border-top:1px solid var(--border);text-align:right;font-variant-numeric:tabular-nums}
+  tbody td:first-child{text-align:left;color:var(--ink-2)}
+  tbody tr.hl td{background:var(--surface-2);font-weight:700}
+  .tv table{min-width:0;font-size:14px}
+  .tv .tablewrap{margin-top:8px;box-shadow:none}
+
+  /* callouts */
+  .callout{margin-top:24px;background:var(--surface);border:1px solid var(--border);border-left:4px solid #1f2a44;border-radius:10px;padding:16px 20px}
+  .callout h4{margin:0 0 6px;font-size:16px}
+  details.calc{margin-top:22px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 20px}
+  details.calc summary{cursor:pointer;font-weight:700}
+  details.calc ul{padding-left:20px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:860px){.two{grid-template-columns:1fr}}
+
+  /* timeline */
+  ol.tl{list-style:none;margin:26px 0 0;padding:0;border-left:2px solid var(--border-2)}
+  ol.tl li{position:relative;padding:0 0 18px 22px}
+  ol.tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--ink-2)}
+  ol.tl li.key::before{background:var(--accent);border-color:var(--accent)}
+  ol.tl li.future::before{border-style:dashed}
+  ol.tl .d{font:700 13px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);letter-spacing:.02em}
+  ol.tl .t{font-size:15.5px}
+
+  ol.qs li{margin:8px 0}
+  .src li{margin:6px 0;font-size:14.5px}
+  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:10px 16px;font-weight:700;font-size:14.5px;text-decoration:none;border:1px solid var(--border-2);background:var(--surface);color:var(--ink)}
+  .btn:hover{border-color:var(--ink-2)}
+
+  footer{border-top:1px solid var(--border);padding:34px 0 60px;color:var(--muted);font-size:13.5px}
+  footer .disc{max-width:80ch;margin-bottom:10px}
+
+  .tip{position:fixed;z-index:100;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--border-2);border-radius:8px;
+    padding:8px 11px;font-size:13px;line-height:1.35;box-shadow:var(--shadow);opacity:0;transition:opacity .08s;max-width:260px}
+  .tip b{display:block;font-size:15px}
+  .tip .k{display:inline-block;width:12px;height:2px;background:var(--s1);vertical-align:middle;margin-right:6px}
+  @media print{ header.top,.iconbtn,.tip{display:none} section{break-inside:avoid-page} }
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="#top"><span class="mk" aria-hidden="true">%</span>MPSERS, checked</a>
+  <nav class="links" aria-label="Sections">
+    <a class="link" href="#claims">Claims</a>
+    <a class="link" href="#funded">Funded status</a>
+    <a class="link" href="#money">The $3.2B</a>
+    <a class="link" href="#holdings">Holdings</a>
+    <a class="link" href="#timing">Timing</a>
+    <a class="link" href="#sources">Sources</a>
+  </nav>
+  <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light or dark theme" title="Light / dark">&#9680;</button>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <div class="eyebrow">Fact check &middot; Governor's announcement of Nov. 17, 2026</div>
+  <h1>Michigan's school pension isn't fully funded yet. It might be by 2030.</h1>
+  <p class="sub">The Governor announced that MPSERS, the pension for more than 400,000 current and retired school employees, is &ldquo;Fully Funded Ahead of Schedule.&rdquo; We checked each claim against the state's own reports. Most of the numbers hold up. The headline doesn't, and the 2030 date is a forecast the state's consultant first made (as 2031) in January 2025.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="n">74.6%</div><div class="l">Funded on Sept. 30, 2025, the latest official count (79.6% at market value)</div></div>
+    <div class="kpi"><div class="n">$25.1B</div><div class="l">Still unfunded on that date: promised benefits not yet covered by assets</div></div>
+    <div class="kpi"><div class="n">2031 &rarr; 2030</div><div class="l">Full-funding forecast: 2031 in Treasury's Jan. 2025 study, 2030 in the Nov. 2026 release</div></div>
+  </div>
+  <p class="stamp">Independent analysis &middot; last updated Nov. 18, 2026 &middot; every figure links to a public source</p>
+</div>
+
+<!-- ============ CLAIMS ============ -->
+<section id="claims"><div class="wrap">
+  <div class="eyebrow">Claim by claim</div>
+  <h2 class="sec">What holds up, and what doesn't</h2>
+  <p class="lead prose">Quotes are from the <a href="https://www.michigan.gov/whitmer/news/press-releases/2026/11/17/michigan-public-school-pension-system-funded-ahead-of-schedule-unlocking-3-billion-annually">Governor's release</a>. Findings come from MPSERS's actuarial valuations, its annual report, and the State of Michigan Investment Board's own materials.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="claim"><q>Michigan Public School Pension System Fully Funded Ahead of Schedule</q> (headline)</div>
+      <div class="finding">Not yet. The latest actuarial valuation puts the pension at <strong>74.6% funded</strong>, <strong>$25.1 billion</strong> short, as of Sept. 30, 2025 (79.6% if assets are counted at market value instead of the smoothed value the actuaries use). The release's own text says &ldquo;on track to reach full funding by 2030.&rdquo;</div>
+      <div class="verdict"><span class="chip crit"><span class="ic" aria-hidden="true">&#10005;</span>Misleading</span></div>
+    </div>
+    <div class="card">
+      <div class="claim"><q>on track to reach full funding by 2030, rather than its previously projected date under current law of 2038</q></div>
+      <div class="finding">2038 is the deadline in law for paying off the debt, not a forecast. In January 2025, Treasury's investment consultant (Aon) already projected full funding by <strong>fiscal 2031</strong> in its central case. Two strong years (9.8% in FY2025, 14% reported for FY2026) can plausibly pull that to 2030, but only if markets cooperate. <a href="#funded">See the forecast range.</a></div>
+      <div class="verdict"><span class="chip warn"><span class="ic" aria-hidden="true">~</span>Plausible forecast</span></div>
+    </div>
+    <div class="card">
+      <div class="claim"><q>reduce future pension costs by approximately $3.2 billion annually</q>, with about $1.5B from the state and $1.7B from districts</div>
+      <div class="finding">The figure matches the yearly debt payment the law locks in. The actuaries computed <strong>$3.19 billion</strong> for FY2025, and a 2017&ndash;18 &ldquo;floor&rdquo; keeps the payment from falling below the prior year's until the debt is paid off. It stops at payoff. The roughly $0.8 billion a year for benefits being earned now continues. <a href="#money">How the payment works.</a></div>
+      <div class="verdict"><span class="chip good"><span class="ic" aria-hidden="true">&#10003;</span>Checks out, if 2030 happens</span></div>
+    </div>
+    <div class="card">
+      <div class="claim"><q>In Fiscal Year 2026, the state earned a 14% return &hellip; a 10-year annualized return of 10.7%, exceeding the 9.5% median</q></div>
+      <div class="finding">Consistent with the Investment Board's latest published numbers: as of Dec. 31, 2025, a 10-year return of <strong>10.1%</strong> against a peer median of <strong>9.0%</strong>. The FY2026 results aren't published yet; they go to the Board on Dec. 16. The fund also <strong>trailed its own benchmark</strong> in every period shown. <a href="#returns">Returns detail.</a></div>
+      <div class="verdict"><span class="chip warn"><span class="ic" aria-hidden="true">~</span>Consistent, not yet published</span></div>
+    </div>
+    <div class="card">
+      <div class="claim"><q>years of disciplined pension contributions &hellip; above what is called for in the current statute</q></div>
+      <div class="finding">The state did make extra one-time deposits: <strong>$1.14 billion</strong> in FY2023 and <strong>$250 million</strong> in FY2025. But the main force is the payment floor written into laws passed in 2017 and 2018, before this administration. A 2024 law (PA 127) also cut districts' share and ended retiree-health contribution floors; critics called the related budget shift a &ldquo;raid.&rdquo;</div>
+      <div class="verdict"><span class="chip good"><span class="ic" aria-hidden="true">&#10003;</span>True, with context</span></div>
+    </div>
+    <div class="card">
+      <div class="claim"><q>MPSERS' retiree healthcare benefits reached fully funded status in 2023</q></div>
+      <div class="finding">True. The retiree-health plan was <strong>150.6% funded</strong> as of Sept. 30, 2025. (The $598 million savings figure in the release was not checked here.)</div>
+      <div class="verdict"><span class="chip good"><span class="ic" aria-hidden="true">&#10003;</span>Checks out</span></div>
+    </div>
+    <div class="card">
+      <div class="claim"><q>$15.7 billion in state-level contributions &hellip; total contributions have reached $43.7 billion</q></div>
+      <div class="finding">The release gives no time period, so these totals can't be checked against any published schedule.</div>
+      <div class="verdict"><span class="chip neut"><span class="ic" aria-hidden="true">?</span>Can't verify</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ FUNDED STATUS ============ -->
+<section id="funded"><div class="wrap">
+  <div class="eyebrow">How funded is it?</div>
+  <h2 class="sec">Up from about 60% to 74.6% in ten years</h2>
+  <p class="lead prose">&ldquo;Funded&rdquo; means assets divided by the benefits already earned. The official figure uses a five-year smoothed asset value, so good and bad years phase in gradually. On Sept. 30, 2025, smoothed assets were 94% of market value, so gains are still waiting to be counted.</p>
+
+  <figure>
+    <div class="cap">MPSERS pension funded ratio, actuarial (smoothed) basis</div>
+    <div class="subcap">Each Sept. 30 valuation date, 2015&ndash;2025. The line at 100% is &ldquo;fully funded.&rdquo;</div>
+    <div class="chart" id="fundedChart" role="img" aria-label="Funded ratio rose from 60.5% in 2015 to 74.6% in 2025. 100% is fully funded."></div>
+    <details class="tv"><summary>Show as a table</summary>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Sept. 30</th><th>Funded</th><th>Sept. 30</th><th>Funded</th></tr></thead>
+        <tbody>
+          <tr><td>2015</td><td>60.5%</td><td>2021</td><td>64.1%</td></tr>
+          <tr><td>2016</td><td>59.7%</td><td>2022</td><td>64.3%</td></tr>
+          <tr><td>2017</td><td>61.6%</td><td>2023</td><td>68.8%</td></tr>
+          <tr><td>2018</td><td>60.7%</td><td>2024</td><td>71.2%</td></tr>
+          <tr><td>2019</td><td>60.4%</td><td>2025</td><td>74.6%</td></tr>
+          <tr><td>2020</td><td>60.9%</td><td></td><td></td></tr>
+        </tbody></table></div>
+    </details>
+    <div class="note">Source: MPSERS FY2025 Annual Comprehensive Financial Report, Schedule of Funding Progress (p. 98), for 2015&ndash;2024, and the Sept. 30, 2025 actuarial valuation for 2025. Where the actuary restated a year for new assumptions (2016, 2017, 2018, 2021, 2023), the restated figure is shown.</div>
+  </figure>
+
+  <h3>Where it might be now</h3>
+  <p class="prose">The official count for Sept. 30, 2026 won't come until the next valuation (last year's was issued March 3). We made a rough estimate from published figures: <strong>about 88% at market value</strong>. Closing the remaining gap of about $11 billion by 2030 needs returns somewhat above the plan's 6% assumption, with the debt payment held near $3.2 billion a year.</p>
+  <details class="calc"><summary>Our back-of-envelope (not an official figure)</summary>
+    <ul class="small">
+      <li>Start: market-value assets of <strong>$78.66B</strong> (MPSERS ACFR, Sept. 30, 2025) and liabilities of <strong>$98.80B</strong> (2025 valuation).</li>
+      <li>FY2026: assets earn the release's 14%; cash flow repeats FY2025's (contributions $4.90B in, benefits and expenses $5.83B out). Liabilities grow at the 6% assumption, plus normal cost (13.79% of $9.80B payroll), minus benefits.</li>
+      <li>Result: about $88.7B against $100.1B, or <strong>about 88.6%</strong>, with a gap of about $11.4B. The real figure will differ: MPSERS's own FY2026 return and cash flows aren't published yet.</li>
+      <li>Rolled forward with the debt payment at $3.19B a year: at 6% returns, 100% arrives in about <strong>FY2031</strong>; at 7.5% a year, about <strong>FY2029</strong>; at 4% a year, not by 2035.</li>
+    </ul>
+  </details>
+
+  <h3 id="range">The forecast has always had a wide range</h3>
+  <p class="prose">Treasury's January 2025 asset-liability study (by Aon) projected the funded ratio thousands of times under different market paths. Its central case reached 100% in fiscal 2031. The spread shows how much depends on markets.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Market-value funded ratio</th><th>2028</th><th>2033</th><th>2043</th></tr></thead>
+    <tbody>
+      <tr><td>Bad markets (5th percentile)</td><td>58%</td><td>59%</td><td>69%</td></tr>
+      <tr><td>Below average (25th)</td><td>75%</td><td>85%</td><td>108%</td></tr>
+      <tr class="hl"><td>Central case (median)</td><td>89%</td><td>108%</td><td>154%</td></tr>
+      <tr><td>Above average (75th)</td><td>103%</td><td>134%</td><td>&gt;200%</td></tr>
+      <tr><td>Good markets (95th)</td><td>126%</td><td>185%</td><td>&gt;200%</td></tr>
+      <tr><td>Chance of being over 100%</td><td>31%</td><td>58%</td><td>79%</td></tr>
+    </tbody></table></div>
+  <p class="note">Source: Aon, MPSERS Asset-Liability Study, January 2025, p. 28 (Treasury's proposed mix, 77% return-seeking; the mix then in place gave nearly identical medians of 90%, 108% and 157%). It assumes a 6.00% discount rate and actual returns through March 31, 2024. It started from 67%; strong returns since then have improved the starting point.</p>
+</div></section>
+
+<!-- ============ THE MONEY ============ -->
+<section id="money"><div class="wrap">
+  <div class="eyebrow">The $3.2 billion</div>
+  <h2 class="sec">Why it's paying off early: a floor on the debt payment</h2>
+  <p class="lead prose">Each year the actuaries compute a payment toward the unfunded liability. Strong returns have pushed that number down. But laws passed in 2017 and 2018 (PA 92 of 2017, PA 181 of 2018) say the payment can't fall below the prior year's, in dollars, &ldquo;until such time as the UAAL is &lsquo;paid off.&rsquo;&rdquo; PA 127 of 2024 reset that floor to the FY2025 amount. Paying more than the formula asks is what pulls the payoff date forward.</p>
+
+  <figure>
+    <div class="cap">Debt payment the actuaries computed, by state fiscal year</div>
+    <div class="subcap">Billions of dollars. The line marks the FY2025 floor (the payment can't drop below it until the debt is paid).</div>
+    <div class="chart" id="uaalChart" role="img" aria-label="Computed debt payment fell from 3.19 billion dollars in FY2025 to 2.69 billion in FY2028, below the 3.19 billion floor."></div>
+    <details class="tv"><summary>Show as a table</summary>
+      <div class="tablewrap"><table>
+        <thead><tr><th>State fiscal year</th><th>Computed debt payment</th><th>Normal cost (continues)</th><th>Set by valuation of</th></tr></thead>
+        <tbody>
+          <tr><td>FY2025</td><td>$3.187B</td><td>$0.689B</td><td>Sept. 30, 2022</td></tr>
+          <tr><td>FY2026</td><td>$2.972B</td><td>$0.802B</td><td>Sept. 30, 2023</td></tr>
+          <tr><td>FY2027</td><td>$2.882B</td><td>$0.803B</td><td>Sept. 30, 2024</td></tr>
+          <tr><td>FY2028</td><td>$2.685B</td><td>$0.828B</td><td>Sept. 30, 2025</td></tr>
+        </tbody></table></div>
+    </details>
+    <div class="note">Source: MPSERS pension valuations as of Sept. 30, 2023, 2024 and 2025 (Gabriel, Roeder, Smith &amp; Co.), &ldquo;Contribution Comparison&rdquo;; floor provisions from each valuation's appendix. The valuations note that their computed figures do not reflect the floors.</div>
+  </figure>
+
+  <div class="two">
+    <div class="callout"><h4>What stops at full funding</h4>
+      <p class="small" style="margin:0">The debt payment, about <strong>$3.2 billion</strong> a year. The release splits it as about $1.5B from the state (through School Aid Section 147c) and about $1.7B from districts. Since FY2026, a district's debt-payment rate is capped at <strong>15.21%</strong> of payroll, down from 20.96% (PA 127 of 2024); the state covers the rest.</p></div>
+    <div class="callout"><h4>What keeps going</h4>
+      <p class="small" style="margin:0">The <strong>normal cost</strong>, the price of benefits current staff earn each year: <strong>$0.83 billion</strong> for FY2028 (8.45% of pension payroll). The retirement board's funding policy keeps it in place until the plan is <strong>120% funded</strong>. Whether districts or the state keep the freed-up debt money is a budget decision lawmakers haven't made.</p></div>
+  </div>
+</div></section>
+
+<!-- ============ RETURNS ============ -->
+<section id="returns"><div class="wrap">
+  <div class="eyebrow">Investment returns</div>
+  <h2 class="sec">Ahead of peers, behind its own benchmark</h2>
+  <p class="lead prose">The release credits &ldquo;strong investment stewardship.&rdquo; Against other large public pensions, the fund has done well. Against the benchmark its own board sets (a blend of indexes matching its target mix), it trailed in every period. Much of the gain came from strong markets.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Annualized, as of Dec. 31, 2025</th><th>1 yr</th><th>3 yr</th><th>5 yr</th><th>7 yr</th><th>10 yr</th></tr></thead>
+    <tbody>
+      <tr class="hl"><td>State of Michigan Retirement Systems</td><td>13.7%</td><td>11.5%</td><td>9.7%</td><td>10.7%</td><td>10.1%</td></tr>
+      <tr><td>Its own policy benchmark</td><td>15.3%</td><td>14.7%</td><td>10.1%</td><td>11.1%</td><td>10.5%</td></tr>
+      <tr><td>Peer median (public plans over $10B)</td><td>13.6%</td><td>11.8%</td><td>8.6%</td><td>10.1%</td><td>9.0%</td></tr>
+    </tbody></table></div>
+  <p class="note">Source: State of Michigan Investment Board, Executive Summary, March 25, 2026, slide 2 (peer universe: State Street, public funds over $10 billion). The same slide credits beating the median with &ldquo;approximately $15 billion in excess value&rdquo; over ten years. For MPSERS alone in FY2025, private equity returned 6.4% against its 18.6% benchmark (S&amp;P 500 plus 3 points, lagged a quarter), per the FY2025 annual report, p. 74.</p>
+</div></section>
+
+<!-- ============ HOLDINGS ============ -->
+<section id="holdings"><div class="wrap">
+  <div class="eyebrow">What the fund owns</div>
+  <h2 class="sec">A pooled $122 billion, nearly half in private assets</h2>
+  <p class="lead prose">MPSERS doesn't hold securities in its own name. Its money (about $94 billion with retiree health) is pooled with the state employees', state police and judges' systems and managed by Treasury's Bureau of Investments. Three public sources show what's inside.</p>
+
+  <figure>
+    <div class="cap">Where the pooled money sits</div>
+    <div class="subcap">Share of $122.4 billion, Dec. 31, 2025</div>
+    <div class="legend" aria-hidden="true"><span><i class="sw" style="background:var(--s1)"></i>Publicly traded (daily prices)</span><span><i class="sw" style="background:var(--s2)"></i>Private or hedge funds (appraised or manager-reported values)</span></div>
+    <div class="bars" id="allocChart"></div>
+    <details class="tv"><summary>Show as a table</summary>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Asset class</th><th>Share</th><th>Pricing</th></tr></thead>
+        <tbody>
+          <tr><td>U.S. stocks</td><td>21.1%</td><td>Public</td></tr>
+          <tr><td>Private equity</td><td>20.4%</td><td>Private</td></tr>
+          <tr><td>International stocks</td><td>15.5%</td><td>Public</td></tr>
+          <tr><td>Bonds (fixed income)</td><td>11.8%</td><td>Public</td></tr>
+          <tr><td>Hedge funds (absolute return)</td><td>10.1%</td><td>Private</td></tr>
+          <tr><td>Real return &amp; opportunistic</td><td>8.8%</td><td>Private</td></tr>
+          <tr><td>Real estate &amp; infrastructure</td><td>7.9%</td><td>Private</td></tr>
+          <tr><td>Cash (short term)</td><td>4.4%</td><td>Public</td></tr>
+        </tbody></table></div>
+    </details>
+    <div class="note">Source: Investment Board Executive Summary, March 25, 2026, slide 3. Private and hedge-fund holdings total 47.2%, plus $17.3 billion of commitments not yet called. Their values come from appraisals and manager reports, which makes reported returns smoother and harder to check from outside.</div>
+  </figure>
+
+  <figure>
+    <div class="cap">Largest U.S.-listed holdings, Sept. 30, 2026</div>
+    <div class="subcap">Market value in millions of dollars, from the quarterly SEC Form 13F. It covers $22.6 billion, under a fifth of the pool.</div>
+    <div class="bars" id="topChart"></div>
+    <details class="tv"><summary>Show as a table</summary>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Holding</th><th>Value</th><th>Share of 13F</th></tr></thead>
+        <tbody id="topTable"></tbody></table></div>
+    </details>
+    <div class="note">Source: State of Michigan Retirement System, SEC Form 13F-HR for the quarter ended Sept. 30, 2026 (CIK 762152, filed Oct. 27, 2026): 966 securities totaling $22,595,236,086. Alphabet's A and C shares are combined. The 13F lists only U.S.-listed stocks and ETFs; bonds, international stocks, private funds and real estate are not in it.</div>
+    <p style="margin:14px 0 0"><a class="btn" href="assets/smrs-13f-2026q3.csv" download>Download all 966 holdings (CSV)</a></p>
+  </figure>
+
+  <div class="callout"><h4>Other places to look</h4>
+    <p class="small" style="margin:0">The <a href="https://www.michigan.gov/orsschools/acfr">MPSERS annual report</a> (Investment Section) lists MPSERS's top 10 stocks and top 10 bonds. On Sept. 30, 2025 the stocks were led by Nvidia, Microsoft, Apple, Amazon and Meta, and the bonds were mostly U.S. Treasuries. It says &ldquo;a complete list of stock and bond holdings is available from the Michigan Department of Treasury,&rdquo; so the full list is available on request. The Investment Board's <a href="https://www.michigan.gov/treasury/about/investments/quarterly">quarterly reports</a> break down each asset class, including private-equity and real-estate managers.</p></div>
+</div></section>
+
+<!-- ============ TIMING ============ -->
+<section id="timing"><div class="wrap">
+  <div class="eyebrow">The timing</div>
+  <h2 class="sec">Announced two weeks after the election, ahead of the official numbers</h2>
+  <p class="lead prose">The release didn't reveal anything that was being held back: the early-payoff forecast had been public since January 2025. But it arrived before the Investment Board has reviewed the year's results and months before the actuaries measure the plan again. It also makes a policy request of whoever governs next.</p>
+  <ol class="tl">
+    <li><div class="d">Jul. 13, 2017</div><div class="t">PA 92 of 2017 signed: the debt payment can't fall below the prior year's until the debt is paid off. PA 181 of 2018 later made that a dollar floor.</div></li>
+    <li><div class="d">FY2023</div><div class="t">One-time extra deposits of $1 billion plus $140 million into MPSERS.</div></li>
+    <li><div class="d">2024</div><div class="t">PA 127 of 2024: districts' cap drops from 20.96% to 15.21% of payroll; retiree-health contribution floors end. PA 120 of 2024 adds $250 million for FY2025.</div></li>
+    <li class="key"><div class="d">Jan. 2025</div><div class="t">Treasury's asset-liability study (Aon): full funding expected by fiscal 2031 in the central case.</div></li>
+    <li><div class="d">Mar. 3, 2026</div><div class="t">Sept. 30, 2025 valuation issued: 74.6% funded.</div></li>
+    <li class="key"><div class="d">Mar. 25, 2026</div><div class="t">Chief Investment Officer to the Investment Board: &ldquo;For every year sooner the Funds become fully funded, a projected $3.5 billion is added to the budget annually.&rdquo;</div></li>
+    <li><div class="d">Jul. 21, 2026</div><div class="t">FY2027 budget signed. The retirees' association MARSP writes that the state &ldquo;remains on track to pay off all pension debt by 2035.&rdquo;</div></li>
+    <li><div class="d">Sep. 30, 2026</div><div class="t">State fiscal year 2026 ends.</div></li>
+    <li><div class="d">Nov. 3, 2026</div><div class="t">Election Day. The Governor is term-limited.</div></li>
+    <li class="key"><div class="d">Nov. 17, 2026</div><div class="t">The release: &ldquo;on track to reach full funding by 2030.&rdquo;</div></li>
+    <li class="future"><div class="d">Dec. 16, 2026</div><div class="t">Investment Board meets; fiscal 2026 results expected.</div></li>
+    <li class="future"><div class="d">Jan. 2027</div><div class="t">New governor and Legislature take office; the FY2028 budget follows.</div></li>
+    <li class="future"><div class="d">Spring 2027</div><div class="t">Sept. 30, 2026 valuation expected: the first official measure of the claim.</div></li>
+  </ol>
+
+  <h3>The request in the release</h3>
+  <blockquote>&ldquo;Future gubernatorial administrations and legislatures will need to work together to ensure the pension system reaches full funding but is not overfunded. Overpayments into the trust will result in a loss of dollars that could be used in the classroom.&rdquo;<cite>Governor's release, Nov. 17, 2026</cite></blockquote>
+  <div class="two">
+    <div class="callout"><h4>The case for stopping at 100%</h4>
+      <p class="small" style="margin:0">If payments simply continue, Treasury's own study projected a median funded ratio of <strong>154% by 2043</strong>. Money beyond what's needed sits in the trust instead of classrooms.</p></div>
+    <div class="callout"><h4>The case for a cushion</h4>
+      <p class="small" style="margin:0">At exactly 100%, one bad market year puts the plan back under water. The retirement board's own policy keeps normal-cost payments in place until the plan is <strong>120%</strong> funded, and Treasury's study put a bad-markets case (1 in 20) at <strong>59%</strong> in 2033.</p></div>
+  </div>
+</div></section>
+
+<!-- ============ QUESTIONS ============ -->
+<section id="questions"><div class="wrap">
+  <div class="eyebrow">What to ask</div>
+  <h2 class="sec">Questions the release leaves open</h2>
+  <ol class="qs prose">
+    <li>What assumptions produce 2030: which returns, what contributions, and on the smoothed or market-value basis?</li>
+    <li>Is the $3.2 billion the floored debt payment, and how exactly is it split between the state and districts?</li>
+    <li>Will the board's 120% funding target stay in place, or does &ldquo;not overfunded&rdquo; mean stopping at 100%?</li>
+    <li>When the debt payment ends, does the districts' $1.7 billion stay with districts, or will the state recapture it through school aid?</li>
+    <li>Will Treasury publish the complete holdings list its annual report says is available?</li>
+  </ol>
+</div></section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources"><div class="wrap">
+  <div class="eyebrow">Sources</div>
+  <h2 class="sec">Every document used</h2>
+  <p class="prose small muted">Copies of each source, the 13F parsing script and a figure-by-figure source log are in the <a href="https://github.com/akarpo/mpsers">public repository</a>.</p>
+  <ul class="src prose">
+    <li><a href="https://www.michigan.gov/whitmer/news/press-releases/2026/11/17/michigan-public-school-pension-system-funded-ahead-of-schedule-unlocking-3-billion-annually">Office of the Governor, press release, Nov. 17, 2026</a></li>
+    <li><a href="https://www.michigan.gov/psru/-/media/Project/Websites/psru/Administration-and-Compliance/GASB/Financial-Reports/Pension-Valuations/All-employers/MPSERS_All_Employers_Pension_Valuation_2025.pdf">MPSERS pension actuarial valuation as of Sept. 30, 2025</a> (issued Mar. 3, 2026), plus the <a href="https://www.michigan.gov/psru/-/media/Project/Websites/psru/Administration-and-Compliance/GASB/Financial-Reports/Pension-Valuations/All-employers/MPSERS_All_Employers_Pension_Valuation_2024.pdf">2024</a> and <a href="https://www.michigan.gov/psru/-/media/Project/Websites/psru/Administration-and-Compliance/GASB/Financial-Reports/Pension-Valuations/All-employers/MPSERS_All_Employers_Pension_Valuation_2023.pdf">2023</a> valuations</li>
+    <li><a href="https://www.michigan.gov/psru/-/media/Project/Websites/psru/Administration-and-Compliance/GASB/Financial-Reports/OPEB-Valuations/All-employers/MPSERS_All_Employers_OPEB_Valuation_2025.pdf">MPSERS retiree-health (OPEB) valuation as of Sept. 30, 2025</a></li>
+    <li><a href="https://www.michigan.gov/orsschools/-/media/Project/Websites/orsschools/Archive/MPSERS-ACFR/Fiscal-Year-2025-MPSERS-ACFR.pdf">MPSERS Annual Comprehensive Financial Report, FY2025</a></li>
+    <li><a href="https://michigan.gov/treasury/-/media/Project/Websites/treasury/Investments/Studies/2025/MPSERS-Pension-2025-Asset-Liability-Study.pdf?hash=5A54E37B2D07CE85F20BC223BA3ED3B7&amp;rev=7e49c90f15034ddbab3d37b25b319bab">Aon, MPSERS Asset-Liability Study, January 2025</a></li>
+    <li><a href="https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/SMIB/2026/SMIB-Presentation-3252026.pdf?rev=c647058bb506455db39d998cd01e673f">State of Michigan Investment Board, Executive Summary, Mar. 25, 2026</a></li>
+    <li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000762152&amp;type=13F">State of Michigan Retirement System, SEC Form 13F filings (CIK 762152)</a></li>
+    <li><a href="https://www.marsp.org/news/michigan-fy-2027-budget-mpsers-funding/">MARSP, &ldquo;Michigan FY 2027 Budget Keeps MPSERS Funding on Track,&rdquo; July 2026</a></li>
+    <li><a href="https://bridgemi.com/talent-education/whitmer-seeks-670m-michigan-schools-critics-call-it-raid/">Bridge Michigan, &ldquo;Whitmer seeks $670M for Michigan schools. Critics call it a &lsquo;raid&rsquo;&rdquo;</a> and <a href="https://reason.org/backgrounder/redirecting-mpsers-debt-payment-cost-taxpayers/">Reason Foundation's backgrounder</a> on the 2024 change</li>
+  </ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="disc"><strong>Independent analysis.</strong> Prepared by a Michigan resident as civic commentary on a public announcement. Not affiliated with, authorized by, or paid for by the State of Michigan, the Office of Retirement Services, the Department of Treasury, any school district, party or campaign. Facts come from the public sources listed above; conclusions are opinion. The back-of-envelope estimate is ours and is labeled as such.</div>
+  <div>mpsers.karpowitsch.org &middot; last updated Nov. 18, 2026</div>
+</div></footer>
+
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  document.getElementById('themeBtn').addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+
+  var NS='http://www.w3.org/2000/svg';
+  function el(tag,attrs,parent){var n=document.createElementNS(NS,tag);for(var k in attrs){n.setAttribute(k,attrs[k]);}if(parent){parent.appendChild(n);}return n;}
+  function txt(parent,x,y,s,cls,anchor){var t=el('text',{x:x,y:y,'text-anchor':anchor||'start'},parent);if(cls){t.setAttribute('class',cls);}t.textContent=s;return t;}
+
+  // ---------- shared tooltip ----------
+  var tip=document.getElementById('tip');
+  function showTip(x,y,val,label){
+    tip.textContent='';
+    var b=document.createElement('b'); b.textContent=val; tip.appendChild(b);
+    var s=document.createElement('span'); s.textContent=label; tip.appendChild(s);
+    tip.style.opacity='1';
+    var w=tip.offsetWidth,h=tip.offsetHeight,vw=window.innerWidth;
+    var left=Math.min(vw-w-8,Math.max(8,x+14)), top=Math.max(8,y-h-12);
+    tip.style.left=left+'px'; tip.style.top=top+'px';
+  }
+  function hideTip(){tip.style.opacity='0';}
+  function bindTip(node,val,label){
+    node.addEventListener('pointermove',function(e){showTip(e.clientX,e.clientY,val,label);});
+    node.addEventListener('pointerleave',hideTip);
+    node.addEventListener('focus',function(){var r=node.getBoundingClientRect();showTip(r.left+r.width/2,r.top,val,label);});
+    node.addEventListener('blur',hideTip);
+  }
+
+  // ---------- funded ratio line ----------
+  var funded=[[2015,60.5],[2016,59.7],[2017,61.6],[2018,60.7],[2019,60.4],[2020,60.9],[2021,64.1],[2022,64.3],[2023,68.8],[2024,71.2],[2025,74.6]];
+  function drawFunded(){
+    var host=document.getElementById('fundedChart'); host.textContent='';
+    var W=Math.max(300,host.clientWidth), H=W<520?250:300, m={l:40,r:W<520?44:58,t:18,b:30};
+    var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},host);
+    var y0=40,y1=100, x0=2015,x1=2025;
+    function X(v){return m.l+(v-x0)/(x1-x0)*(W-m.l-m.r);} function Y(v){return m.t+(y1-v)/(y1-y0)*(H-m.t-m.b);}
+    var g=el('g',{'class':'grid'},svg);
+    [40,60,80].forEach(function(v){el('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v)},g);txt(svg,m.l-8,Y(v)+4,v+'%',null,'end');});
+    el('line',{x1:m.l,x2:W-m.r,y1:Y(100),y2:Y(100),'class':'ref'},svg);
+    txt(svg,m.l-8,Y(100)+4,'100%',null,'end');
+    txt(svg,m.l+4,Y(100)-7,'Fully funded','lab2');
+    var step=W<520?5:2;
+    for(var yr=x0;yr<=x1;yr+=step){txt(svg,X(yr),H-8,String(yr),null,'middle');}
+    var d=funded.map(function(p,i){return (i?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1);}).join(' ');
+    el('path',{d:d+' L'+X(x1)+' '+Y(y0)+' L'+X(x0)+' '+Y(y0)+' Z','class':'area'},svg);
+    el('path',{d:d,'class':'line'},svg);
+    var first=funded[0],last=funded[funded.length-1];
+    el('circle',{cx:X(first[0]),cy:Y(first[1]),r:4,'class':'dot'},svg);
+    el('circle',{cx:X(last[0]),cy:Y(last[1]),r:5,'class':'dot'},svg);
+    txt(svg,X(first[0])+2,Y(first[1])+20,'60.5%','lab');
+    txt(svg,X(last[0])+9,Y(last[1])+5,'74.6%','lab');
+    var xh=el('line',{x1:0,x2:0,y1:m.t,y2:H-m.b,'class':'xh'},svg);
+    var hit=el('rect',{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,'class':'hit',tabindex:0,'aria-label':'Funded ratio by year; use left and right arrow keys'},svg);
+    var cur=funded.length-1;
+    function at(i,cx,cy){cur=i;var p=funded[i];xh.setAttribute('x1',X(p[0]));xh.setAttribute('x2',X(p[0]));xh.style.opacity='.5';
+      var r=svg.getBoundingClientRect(),sx=r.width/W;showTip(cx!=null?cx:r.left+X(p[0])*sx,cy!=null?cy:r.top+Y(p[1])*sx,p[1].toFixed(1)+'%','Sept. 30, '+p[0]+', smoothed basis');}
+    hit.addEventListener('pointermove',function(e){var r=svg.getBoundingClientRect(),sx=W/r.width;var vx=(e.clientX-r.left)*sx;
+      var i=Math.round((vx-m.l)/(W-m.l-m.r)*(x1-x0));i=Math.max(0,Math.min(funded.length-1,i));at(i,e.clientX,e.clientY);});
+    hit.addEventListener('pointerleave',function(){xh.style.opacity='0';hideTip();});
+    hit.addEventListener('focus',function(){at(cur);});
+    hit.addEventListener('blur',function(){xh.style.opacity='0';hideTip();});
+    hit.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){at(Math.max(0,cur-1));e.preventDefault();}if(e.key==='ArrowRight'){at(Math.min(funded.length-1,cur+1));e.preventDefault();}});
+  }
+
+  // ---------- computed debt payment columns ----------
+  var uaal=[['FY2025',3.187],['FY2026',2.972],['FY2027',2.882],['FY2028',2.685]], floor=3.187;
+  function drawUaal(){
+    var host=document.getElementById('uaalChart'); host.textContent='';
+    var W=Math.max(300,host.clientWidth), H=270, m={l:44,r:16,t:30,b:46};
+    var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},host);
+    var ymax=3.5; function Y(v){return m.t+(ymax-v)/ymax*(H-m.t-m.b);}
+    var g=el('g',{'class':'grid'},svg);
+    [1,2,3].forEach(function(v){el('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v)},g);txt(svg,m.l-8,Y(v)+4,'$'+v+'B',null,'end');});
+    el('line',{x1:m.l,x2:W-m.r,y1:Y(0),y2:Y(0),'class':'base'},svg);
+    txt(svg,m.l-8,Y(0)+4,'$0',null,'end');
+    var band=(W-m.l-m.r)/uaal.length, bw=24;
+    uaal.forEach(function(p,i){
+      var cx=m.l+band*(i+.5), x=cx-bw/2, y=Y(p[1]), h=Y(0)-y;
+      var path='M'+x+' '+(y+h)+' V'+(y+4)+' Q'+x+' '+y+' '+(x+4)+' '+y+' H'+(x+bw-4)+' Q'+(x+bw)+' '+y+' '+(x+bw)+' '+(y+4)+' V'+(y+h)+' Z';
+      var c=el('path',{d:path,'class':'col',tabindex:0,'aria-label':p[0]+': $'+p[1].toFixed(2)+' billion'},svg);
+      bindTip(c,'$'+p[1].toFixed(3)+'B',p[0]+' computed debt payment');
+      // Values sit under the axis, not on the caps, so they never collide with the floor line.
+      txt(svg,cx,H-26,'$'+p[1].toFixed(2)+'B','lab','middle');
+      txt(svg,cx,H-8,p[0],null,'middle');
+    });
+    el('line',{x1:m.l,x2:W-m.r,y1:Y(floor),y2:Y(floor),'class':'ref'},svg);
+    txt(svg,W-m.r,Y(floor)-8,'Floor: $3.19B','lab2','end');
+  }
+
+  // ---------- horizontal bars ----------
+  function hbars(id,rows,max,fmt,cls){
+    var host=document.getElementById(id); host.textContent='';
+    rows.forEach(function(r){
+      var row=document.createElement('div'); row.className='brow';
+      var top=document.createElement('div'); top.className='top';
+      var nm=document.createElement('div'); nm.className='name'; nm.textContent=r.name;
+      if(r.note){var sm=document.createElement('small'); sm.textContent=' '+r.note; nm.appendChild(sm);}
+      var vl=document.createElement('div'); vl.className='val'; vl.textContent=fmt(r.v);
+      top.appendChild(nm); top.appendChild(vl);
+      var tr=document.createElement('div'); tr.className='track';
+      var b=document.createElement('div'); b.className='bar '+(cls?cls(r):'p'); b.style.width=(r.v/max*100).toFixed(2)+'%';
+      b.tabIndex=0; b.setAttribute('role','img'); b.setAttribute('aria-label',r.name+': '+fmt(r.v));
+      bindTip(b,fmt(r.v),r.tip||r.name);
+      tr.appendChild(b); row.appendChild(top); row.appendChild(tr); host.appendChild(row);
+    });
+  }
+  var alloc=[
+    {name:'U.S. stocks',v:21.1,pub:1},{name:'Private equity',v:20.4},{name:'International stocks',v:15.5,pub:1},
+    {name:'Bonds',v:11.8,pub:1},{name:'Hedge funds',note:'(absolute return)',v:10.1},{name:'Real return & opportunistic',v:8.8},
+    {name:'Real estate & infrastructure',v:7.9},{name:'Cash',note:'(short term)',v:4.4,pub:1}];
+  alloc.forEach(function(r){r.tip=r.name+(r.pub?' (publicly traded)':' (private or hedge funds)');});
+  hbars('allocChart',alloc,22,function(v){return v.toFixed(1)+'%';},function(r){return r.pub?'p':'q';});
+
+  // Generated by tools/build_13f.py from the SEC 13F; do not edit by hand.
+  /*TOP10:BEGIN*/var top=[{name:'Nvidia',v:1594.7,s:7.06},{name:'Apple',v:1244.3,s:5.51},{name:'Alphabet',note:'(A and C shares)',v:1053.4,s:4.66},{name:'Microsoft',v:986.7,s:4.37},{name:'Amazon',v:642.9,s:2.85},{name:'Broadcom',v:568.1,s:2.51},{name:'Meta Platforms',v:530.8,s:2.35},{name:'Advanced Micro Devices',v:451.1,s:2.00},{name:'iShares MSCI USA Momentum Factor ETF',v:418.3,s:1.85},{name:'Micron Technology',v:393.1,s:1.74}];/*TOP10:END*/
+  hbars('topChart',top,1650,function(v){return '$'+Math.round(v).toLocaleString('en-US')+'M';});
+  var tb=document.getElementById('topTable');
+  top.forEach(function(r){var tr=document.createElement('tr');[r.name+(r.note?' '+r.note:''),'$'+Math.round(r.v).toLocaleString('en-US')+'M',r.s.toFixed(2)+'%'].forEach(function(c){var td=document.createElement('td');td.textContent=c;tr.appendChild(td);});tb.appendChild(tr);});
+
+  function drawAll(){drawFunded();drawUaal();}
+  drawAll();
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(drawAll,120);});
+})();
+</script>
+</body>
+</html>
