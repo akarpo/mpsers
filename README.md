@@ -8,6 +8,9 @@ covers what the pooled State of Michigan Retirement Systems fund holds, and work
 would mean for Troy School District's budget, with questions for the state and for Troy's
 business office.
 
+**Picking this up in a new session? Start with [`HANDOFF.md`](HANDOFF.md)**: current state, open
+items, and the mistakes not to repeat.
+
 ## Layout
 
 | Path | What it is |
@@ -21,7 +24,10 @@ business office.
 | `sources/` | Copies of every statewide source document as downloaded on 2026-11-18. Not deployed. |
 | `sources/troy/` | Troy School District audits, management letter, budget presentations and forecasts, plus Troy's pages from MDE's State Aid Financial Status Reports. Not deployed. |
 | `tools/build_13f.py` | Rebuilds the CSV from `sources/` and rewrites the top-10 block in `index.html` between `/*TOP10:BEGIN*/` and `/*TOP10:END*/`. Run `python -I tools/build_13f.py`. |
-| `tools/share-card.html` | Source of the share image. Open it in Chrome at a 1200×630 viewport and screenshot it. |
+| `tools/share-card.html` | Source of the share image. Render it with `python -I tools/qa.py --card public/assets/<new-name>.png`. |
+| `tools/qa.py` | Renders the page at 1280/390 px, light and dark, into `qa-out/` (git-ignored) and checks overflow, console errors, anchors and heading order. `--live` checks the live site, its 404 page, share image and analytics; `--links` requests every external link. |
+| `tools/cloudflare.py` | Cloudflare Pages status (`status`, `check`) and the one-time setup (`create`, `domain`). Reads credentials from the file named by `CF_CRED_FILE`; never prints them. |
+| `HANDOFF.md` | Where things stand and how to pick the work back up. |
 | `docs/FIGURES.md` | Every figure on the page, with its source document and page. Superseded figures stay listed and marked. |
 | `docs/TSD-FINDINGS.md` | The full Troy research notes: by-year tables back to 2010, every quote, 36 cited board documents. |
 
@@ -36,8 +42,8 @@ business office.
   $3,612,635 note, which first lost "actual attrition").
 - When the page names a person, confirm the name and title in a primary source and cite it.
 - Corrections stay visible: a dated note on the page, and a "Superseded" row in `docs/FIGURES.md`.
-- After any edit, render the page at 1280 px and 390 px, in light and dark mode, and check it for
-  label collisions, heading order and horizontal overflow.
+- After any edit, run `python -I tools/qa.py` (1280 px and 390 px, light and dark) and look at the
+  screenshots for label collisions; the script catches heading order and horizontal overflow.
 - If the share card changes, give the image a new file name so cached link previews refresh.
 
 ## Corrections
@@ -69,4 +75,5 @@ business office.
 Cloudflare Pages project `tsd-mpsers`, Git-connected to `akarpo/mpsers` (`main`), with the custom
 domain `tsd-mpsers.karpowitsch.org` (proxied CNAME to `tsd-mpsers.pages.dev`). A push to `main`
 deploys. Never run `wrangler pages deploy`: it creates a Direct Upload deployment that shadows the
-Git one.
+Git one. After a push, `python -I tools/cloudflare.py status` shows whether the build succeeded and
+`python -I tools/qa.py --live` checks the result.
