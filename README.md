@@ -13,7 +13,7 @@ and also covers what the pooled State of Michigan Retirement Systems fund holds.
 | `public/` | The site. This is the **only** folder Cloudflare Pages deploys (build output dir = `public`, no build command). |
 | `public/index.html` | The single page: inline CSS and JS, no external libraries. |
 | `public/assets/smrs-13f-2026q3.csv` | All 966 holdings from the Q3 2026 SEC 13F. Generated; don't edit. |
-| `public/assets/share.png` | Social share image, 1200×630. |
+| `public/assets/share-troy.png` | Social share image, 1200×630. Rendered from `tools/share-card.html` (open it in Chrome at 1200×630 and screenshot). Give a changed card a new file name so cached link previews refresh. |
 | `sources/` | Copies of every source document as downloaded on 2026-11-18. Not deployed. |
 | `tools/build_13f.py` | Rebuilds the CSV from `sources/` and rewrites the top-10 block in `index.html` between `/*TOP10:BEGIN*/` and `/*TOP10:END*/`. |
 | `docs/FIGURES.md` | Every figure on the page, with its source document and page. |
