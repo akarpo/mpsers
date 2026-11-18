@@ -165,11 +165,12 @@
   tbody td:first-child{text-align:left;color:var(--ink-2)}
   tbody tr.hl td{background:var(--surface-2);font-weight:700}
   .tv table{min-width:0;font-size:14px}
+  @media(max-width:600px){table.fit{min-width:0;font-size:14px} table.fit thead th{white-space:normal} table.fit thead th,table.fit tbody td{padding:9px 10px}}
   .tv .tablewrap{margin-top:8px;box-shadow:none}
 
   /* callouts */
   .callout{margin-top:24px;background:var(--surface);border:1px solid var(--border);border-left:4px solid #1f2a44;border-radius:10px;padding:16px 20px}
-  .callout h4{margin:0 0 6px;font-size:16px}
+  .callout h2,.callout h3,.callout h4{margin:0 0 6px;font-size:16px;font-weight:700;line-height:1.3;letter-spacing:0}
   details.calc{margin-top:22px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 20px}
   details.calc summary{cursor:pointer;font-weight:700}
   details.calc ul{padding-left:20px}
@@ -226,7 +227,7 @@
     <div class="kpi"><div class="n">$25.1B</div><div class="l">Still unfunded on that date: promised benefits not yet covered by assets</div></div>
     <div class="kpi"><div class="n">2031 &rarr; 2030</div><div class="l">Full-funding forecast: 2031 in Treasury's Jan. 2025 study, 2030 in the Nov. 2026 release</div></div>
   </div>
-  <div class="callout"><h4>For Troy School District</h4>About <strong>$14.8 million a year</strong> of Troy's pension bill is the debt charge that ends at payoff, if the state lets districts keep the savings. That would not happen before the 2030&ndash;31 school year. <a href="#troy">See what it means for Troy.</a></div>
+  <div class="callout"><h2>For Troy School District</h2>About <strong>$14.8 million a year</strong> of Troy's pension bill is the debt charge that ends at payoff, if the state lets districts keep the savings. That would not happen before the 2030&ndash;31 school year. <a href="#troy">See what it means for Troy.</a></div>
   <p class="stamp">Independent analysis &middot; last updated Nov. 18, 2026 &middot; every figure links to a public source</p>
 </div>
 
@@ -350,9 +351,9 @@
   </figure>
 
   <div class="two">
-    <div class="callout"><h4>What stops at full funding</h4>
+    <div class="callout"><h3>What stops at full funding</h3>
       <p class="small" style="margin:0">The debt payment, about <strong>$3.2 billion</strong> a year. The release splits it as about $1.5B from the state (through School Aid Section 147c) and about $1.7B from districts. Since FY2026, a district's debt-payment rate is capped at <strong>15.21%</strong> of payroll, down from 20.96% (PA 127 of 2024); the state covers the rest.</p></div>
-    <div class="callout"><h4>What keeps going</h4>
+    <div class="callout"><h3>What keeps going</h3>
       <p class="small" style="margin:0">The <strong>normal cost</strong>, the price of benefits current staff earn each year: <strong>$0.83 billion</strong> for FY2028 (8.45% of pension payroll). The retirement board's funding policy keeps it in place until the plan is <strong>120% funded</strong>. Whether districts or the state keep the freed-up debt money is a budget decision lawmakers haven't made.</p></div>
   </div>
 </div></section>
@@ -413,7 +414,7 @@
     <p style="margin:14px 0 0"><a class="btn" href="assets/smrs-13f-2026q3.csv" download>Download all 966 holdings (CSV)</a></p>
   </figure>
 
-  <div class="callout"><h4>Other places to look</h4>
+  <div class="callout"><h3>Other places to look</h3>
     <p class="small" style="margin:0">The <a href="https://www.michigan.gov/orsschools/acfr">MPSERS annual report</a> (Investment Section) lists MPSERS's top 10 stocks and top 10 bonds. On Sept. 30, 2025 the stocks were led by Nvidia, Microsoft, Apple, Amazon and Meta, and the bonds were mostly U.S. Treasuries. It says &ldquo;a complete list of stock and bond holdings is available from the Michigan Department of Treasury,&rdquo; so the full list is available on request. The Investment Board's <a href="https://www.michigan.gov/treasury/about/investments/quarterly">quarterly reports</a> break down each asset class, including private-equity and real-estate managers.</p></div>
 </div></section>
 
@@ -461,7 +462,7 @@
   </div>
 
   <h3>Troy's MPSERS bill, 2025&ndash;26 school year</h3>
-  <div class="tablewrap"><table>
+  <div class="tablewrap"><table class="fit">
     <thead><tr><th>From Troy's FY2026 audit</th><th>Amount</th><th>Share of covered payroll</th></tr></thead>
     <tbody>
       <tr><td>Pension contributions (incl. defined-contribution members)</td><td>$38,592,217</td><td>39.7%</td></tr>
@@ -490,9 +491,24 @@
   <p class="prose">Troy's own documents show why the $14.8M isn't guaranteed. The state has reshaped MPSERS savings before:</p>
   <ul class="prose">
     <li><strong>2024&ndash;25:</strong> the $598 million the state redirected to schools reached Troy as a one-time payment of $5,055,278. Troy's administration called it &ldquo;Essentially one-time money&rdquo; (budget presentation, Jan. 20, 2026). Troy's audited report said the state gave it &ldquo;rather than a traditional increase to the foundation allowance.&rdquo;</li>
-    <li><strong>2025&ndash;26:</strong> the debt charge dropped from 20.96% to 15.21% of payroll. That one-time payment ended, and other state offsets changed. Troy raised its retirement budget by $3,612,635 &ldquo;to reflect actual attrition and unanticipated increases in employer contribution rates.&rdquo; Its January 2026 planning deck put it this way: &ldquo;Retirement and health-care costs once covered by State have been shifted to the employer.&rdquo;</li>
-    <li><strong>Net effect (our calculation):</strong> after subtracting the state's MPSERS offsets, Troy's own MPSERS cost was <strong>27.24%</strong> of payroll in 2024&ndash;25 and <strong>27.27%</strong> in 2025&ndash;26, essentially unchanged. One 2024&ndash;25 offset (Section 147a(1)) wasn't found and isn't counted.</li>
+    <li><strong>2025&ndash;26:</strong> the debt charge dropped from 20.96% to 15.21% of payroll. The one-time payment ended, and so did two other state MPSERS payments: the Section 147a(1) cost offset and the Section 147g employee health-care reimbursement. Troy raised its retirement budget by $3,612,635 &ldquo;to reflect actual attrition and unanticipated increases in employer contribution rates.&rdquo; Its January 2026 planning deck put it this way: &ldquo;Retirement and health-care costs once covered by State have been shifted to the employer.&rdquo;</li>
+    <li><strong>Net effect (our calculation, from the state's payment records):</strong> the lower debt charge cut Troy's own pension bill by $2.5M, but the state's MPSERS payments to Troy fell by $6.2M. After every offset, Troy's own MPSERS cost rose from <strong>20.2%</strong> of payroll in 2024&ndash;25 to <strong>23.1%</strong> in 2025&ndash;26, about <strong>$3.7M more</strong>.</li>
   </ul>
+  <div class="tablewrap"><table class="fit">
+    <thead><tr><th>State MPSERS payment to Troy (pass-throughs excluded)</th><th>2024&ndash;25</th><th>2025&ndash;26</th></tr></thead>
+    <tbody>
+      <tr><td>147a(1) MPSERS cost offset</td><td>$1,007,246</td><td>&mdash;</td></tr>
+      <tr><td>147a(2) normal-cost offset</td><td>$3,503,426</td><td>$3,673,667</td></tr>
+      <tr><td>147a(4) one-time offset for the reduced debt charge</td><td>$5,055,278</td><td>&mdash;</td></tr>
+      <tr><td>147e defined-contribution reimbursement</td><td>$404,529</td><td>$397,456</td></tr>
+      <tr><td>147g employee health-care reimbursement</td><td>$1,634,235</td><td>&mdash;</td></tr>
+      <tr><td>27l(4) health-care offset</td><td>&mdash;</td><td>$1,326,153</td></tr>
+      <tr class="hl"><td>Total state offsets</td><td>$11,604,715</td><td>$5,397,276</td></tr>
+      <tr><td>Troy-funded MPSERS before offsets (pension + retiree health &minus; 147c pass-throughs)</td><td>$30,371,009</td><td>$27,837,681</td></tr>
+      <tr class="hl"><td>Troy&rsquo;s own MPSERS cost after offsets (our calculation)</td><td>$18,766,294<br>20.2% of payroll</td><td>$22,440,405<br>23.1% of payroll</td></tr>
+      <tr><td>Covered payroll</td><td>$92,923,328</td><td>$97,218,696</td></tr>
+    </tbody></table></div>
+  <p class="note">Sources: Michigan Department of Education, State Aid Financial Status Reports for Troy School District (63150), 2024&ndash;25 (payment dated Aug. 20, 2025) and 2025&ndash;26 (Aug. 20, 2026). The 27l(4) payment isn&rsquo;t on the status report; it comes from Troy&rsquo;s Jan. 20, 2026 budget amendment and FY2026 audit. Contributions, pass-throughs and payroll are from Troy&rsquo;s FY2025 and FY2026 audits. <strong>Corrected Nov. 18, 2026:</strong> an earlier version subtracted only some of these offsets and called the change flat (27.24% vs. 27.27% of payroll).</p>
   <p class="prose"><a href="#troy-questions">Questions for Troy's business office &rarr;</a></p>
   <p class="note">Sources: Troy School District FY2023&ndash;FY2026 audits and Plante Moran management letters; budget presentations of Jan. 13 and Jan. 20, 2026; &ldquo;TSD &ndash; 4-Year General Fund Forecast, February 2026&rdquo; (Mar. 7, 2026 retreat); Budget Amendment 2 (Mar. 17, 2026); &ldquo;General Fund Scenarios 4-year&rdquo; (July 22, 2026). All are in the public <a href="https://tsd-boarddocs.karpowitsch.org">Troy board document archive</a>. No Troy document mentions 2038, the payoff date, or pension full funding.</p>
 </div></section>
@@ -517,7 +533,7 @@
     <li><strong>What MPSERS rates do Troy&rsquo;s forecasts assume?</strong> Neither the February 2026 four-year forecast nor the July 2026 scenarios has a retirement line. Do they keep the 15.21% district debt charge in every year through 2028&ndash;29?</li>
     <li><strong>When would the end of the debt charge first show up in Troy&rsquo;s budget?</strong> If MPSERS stops charging districts for the debt from October 2030, the 2030&ndash;31 budget gets about nine months of relief (about $11.1M by our estimate) and 2031&ndash;32 is the first full year. If &ldquo;2030&rdquo; is a valuation date, relief comes about two years later. Has the state or the district&rsquo;s auditors said which reading is right?</li>
     <li><strong>What made up the $3,612,635 retirement adjustment?</strong> The January 2026 amendment says it reflects &ldquo;actual attrition and unanticipated increases in employer contribution rates,&rdquo; in the year the district debt charge fell from 20.96% to 15.21%. How much came from rates, and how much from the 3% retiree-health premium that employees no longer pay and that Troy says &ldquo;has been absorbed by the employer&rdquo;? Did the original 2025&ndash;26 budget assume the 15.21% rate?</li>
-    <li><strong>Does the business office agree that Troy&rsquo;s net MPSERS cost stayed flat?</strong> By our calculation, after the state&rsquo;s MPSERS offsets, Troy paid 27.24% of payroll in 2024&ndash;25 and 27.27% in 2025&ndash;26. What did Troy receive under Section 147a(1) in 2024&ndash;25? If it was close to the $1,007,246 the state eliminated for 2025&ndash;26, Troy&rsquo;s net cost rose slightly.</li>
+    <li><strong>Does the business office agree that Troy&rsquo;s own MPSERS cost rose?</strong> From the state&rsquo;s payment records, after every MPSERS offset, Troy paid 20.2% of payroll in 2024&ndash;25 and 23.1% in 2025&ndash;26, about $3.7M more, mainly because the state ended its 147a(1), 147a(4) and 147g payments. Do the district&rsquo;s books show the same? <a href="#troy">See the table.</a></li>
     <li><strong>How much of the $14.8M would Troy keep?</strong> Troy&rsquo;s FY2024 audit says the 2024&ndash;25 MPSERS money came &ldquo;rather than a traditional increase to the foundation allowance.&rdquo; If the state handles the end of the debt charge the same way, through smaller foundation increases or cuts to MPSERS categoricals, how would the business office plan for it?</li>
     <li><strong>How would the savings be used?</strong> The board&rsquo;s reduction targets include &ldquo;Structural balance&rdquo; and a &ldquo;15% fund balance.&rdquo; Would the administration recommend restoring reductions, rebuilding fund balance, or holding a reserve in case the pension debt comes back? Troy&rsquo;s FY2026 audit shows its share of the pension shortfall at $89.3M to $271.7M under a one-point change in the discount rate, against $172.2M at the current rate.</li>
   </ol>
@@ -538,7 +554,7 @@
     <li><a href="https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/SMIB/2026/SMIB-Presentation-3252026.pdf?rev=c647058bb506455db39d998cd01e673f">State of Michigan Investment Board, Executive Summary, Mar. 25, 2026</a></li>
     <li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000762152&amp;type=13F">State of Michigan Retirement System, SEC Form 13F filings (CIK 762152)</a></li>
     <li><a href="https://www.marsp.org/news/michigan-fy-2027-budget-mpsers-funding/">MARSP, &ldquo;Michigan FY 2027 Budget Keeps MPSERS Funding on Track,&rdquo; July 2026</a></li>
-    <li>Troy School District: <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-11-10_Board%20of%20Education%20Workshop%206_00%20PM/1.a.%2024680%20TROY%20SCHOOL%20DISTRICT%200626%20AUD%20Final.pdf">FY2026 audit</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2025-11-18_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/8.B.%2024680%20Troy%20School%20District-0625-AU%20260%20and%20Management%20Ltr-Final.pdf">FY2025 management letter</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-01-20_Organizational%20and%20Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/Budget%20Presentation%201-20-26.pdf">Jan. 20, 2026 budget presentation</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-03-07_Winter%20Board%20of%20Education%20Retreat%208_30%20AM/General%20Fund%20-%20FY26%204-Year%20Projections.pdf">4-year forecast (Feb. 2026)</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-03-17_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/5.D.%20TSD%20Budget%20Amendment%202%20for%203-17-26.pdf">Budget Amendment 2 (Mar. 17, 2026)</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-07-22_Regular%20Meeting%20of%20the%20Board%20of%20Education%201_00%20PM/General%20Fund%20Scenarios%204-year.pdf">General Fund scenarios (July 22, 2026)</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2024-06-20_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/7B%20ADMIN%20APPT%20Assist%20Sup%20Business%20Services%20Trudell.doc">business-office appointment (June 20, 2024)</a>, and the rest of the <a href="https://tsd-boarddocs.karpowitsch.org">board document archive</a></li>
+    <li>Troy School District: <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-11-10_Board%20of%20Education%20Workshop%206_00%20PM/1.a.%2024680%20TROY%20SCHOOL%20DISTRICT%200626%20AUD%20Final.pdf">FY2026 audit</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2025-11-18_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/8.B.%2024680%20Troy%20School%20District-0625-AU%20260%20and%20Management%20Ltr-Final.pdf">FY2025 management letter</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-01-20_Organizational%20and%20Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/Budget%20Presentation%201-20-26.pdf">Jan. 20, 2026 budget presentation</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-03-07_Winter%20Board%20of%20Education%20Retreat%208_30%20AM/General%20Fund%20-%20FY26%204-Year%20Projections.pdf">4-year forecast (Feb. 2026)</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-03-17_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/5.D.%20TSD%20Budget%20Amendment%202%20for%203-17-26.pdf">Budget Amendment 2 (Mar. 17, 2026)</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-07-22_Regular%20Meeting%20of%20the%20Board%20of%20Education%201_00%20PM/General%20Fund%20Scenarios%204-year.pdf">General Fund scenarios (July 22, 2026)</a>, <a href="https://media.karpowitsch.org/troysd-boarddocs/2024-06-20_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/7B%20ADMIN%20APPT%20Assist%20Sup%20Business%20Services%20Trudell.doc">business-office appointment (June 20, 2024; Word file)</a>, MDE State Aid Financial Status Reports for <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2511.pdf&amp;report=statusarchive">2024&ndash;25</a> (Troy is p. 1127) and <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2611.pdf&amp;report=statusarchive">2025&ndash;26</a> (p. 1128), and the rest of the <a href="https://tsd-boarddocs.karpowitsch.org">board document archive</a></li>
     <li><a href="https://bridgemi.com/talent-education/whitmer-seeks-670m-michigan-schools-critics-call-it-raid/">Bridge Michigan, &ldquo;Whitmer seeks $670M for Michigan schools. Critics call it a &lsquo;raid&rsquo;&rdquo;</a> and <a href="https://reason.org/backgrounder/redirecting-mpsers-debt-payment-cost-taxpayers/">Reason Foundation's backgrounder</a> on the 2024 change</li>
   </ul>
 </div></section>

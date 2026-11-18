@@ -244,7 +244,8 @@ Of the PA 127 of 2024 provisions (from the MPSERS valuation):
 - **147c(2) one-time deposits** are the same kind of pass-through: $9,076,463 in FY2023 **[S4 p52/34]** and $2,113,411 in FY2025 **[S2 p53/34]**. "Ultimately, there is no impact to fund balance of the School District." **[S5 p11/9]**
 - **147a(1), 147a(4), 27l(4) and 147a(2)** are true offsets: GF revenue with no matching pass-through expenditure.
   - Documented amounts: 147a(4) $5,055,278 in FY2025; 147a(1) $1,007,246 in the FY2026 original budget, then eliminated; 27l(4) $1,326,153 in FY2026; a 147a(2) "$0.5 million" prior-year adjustment in FY2026.
-  - Amounts for earlier years were **not found**.
+  - 147e (defined-contribution reimbursement) and 147g (employee health-care reimbursement) are offsets too.
+  - FY2025 and FY2026 amounts for every one of these are now in section 6, from MDE's State Aid Financial Status Reports. The archive is at `https://mdoe.state.mi.us/samspublic/Home/StatusArchiveReport`; the final report for each year is `ALL<yy>11.pdf`.
 - **147g** reimbursed employees for their 3% OPEB contribution in FY2025 and did not fund operations **[S5 p12/10]**. FY2025 amendment: "147g 3% Reimburse ($1.6m)" **[S15 p9]**. FY2026: "$0.6 million reduction in Sec. 147g" **[S1 p65/48]**.
 
 ---
@@ -327,11 +328,15 @@ The 147c pass-through (FY2026: $13,805,287) would also end. GF revenue and expen
      - "Retirement and health-care costs once covered by State have been shifted to the employer" **[S9 slide 2]**;
      - "Employees no longer contributing 3% healthcare premium, which has been absorbed by the employer" **[S7 p5]**;
      - an FY2026 "RETIREMENT ADJUSTMENT 3,612,635 … unanticipated increases in employer contribution rates" **[S7 p11]**.
-   - **Calc: TSD-funded MPSERS net of the known MPSERS offset categoricals.**
-     - FY2025: $30,371,009 − $5,055,278 (147a(4)) = $25,315,731, or **27.24%** of payroll.
-     - FY2026: $27,837,681 − $1,326,153 (27l(4)) = $26,511,528, or **27.27%** of payroll.
-     - In the first, partial (9-month) year of the lower cap, TSD's net MPSERS cost was **essentially unchanged as a share of payroll**.
-     - Caveats: the FY2025 147a(1) and 147a(2) amounts were not found and are excluded. If FY2025 also had about $1.0M of 147a(1), FY2026 would look slightly worse than FY2025.
+   - **Calc: TSD-funded MPSERS net of ALL state MPSERS offsets** (corrected 2026-11-18; amounts from MDE's State Aid Financial Status Reports for Troy, 63150).
+     - FY2025 offsets: 147a(1) $1,007,246.18 + 147a(2) $3,503,425.81 + 147a(4) $5,055,278.16 + 147e $404,529.41 + 147g $1,634,235.39 = $11,604,714.95 **[MDE 2024-25 status report, p. 1127/1779]**.
+     - FY2026 offsets: 147a(2) $3,673,667.34 + 147e $397,455.73 **[MDE 2025-26 status report, p. 1128/1780]** + 27l(4) $1,326,153 **[S7 p8]** = $5,397,276.07. The 2025-26 report has no 147a(1), 147a(4) or 147g line.
+     - FY2025: $30,371,009 − $11,604,715 = $18,766,294, or **20.20%** of payroll.
+     - FY2026: $27,837,681 − $5,397,276 = $22,440,405, or **23.08%** of payroll.
+     - **Troy's own MPSERS cost rose by $3,674,111 (+2.89 points of payroll)** in the first, partial (9-month) year of the lower cap. Gross TSD-funded cost fell $2,533,328, but the state's offsets fell $6,207,439.
+     - This matches TSD's own description ("Retirement and health-care costs once covered by State have been shifted to the employer").
+     - The status report's 147c(1) amounts match the audits to the dollar ($9,297,728.91 and $13,805,286.56), which supports pairing the state FY report with the same-numbered TSD FY.
+     - **Superseded:** the first version of this calc subtracted only 147a(4) (FY2025) and 27l(4) (FY2026) and reported 27.24% vs. 27.27%, "essentially unchanged". It omitted 147a(1) and 147g in FY2025, and 147a(2) and 147e in both years.
    - **Calc: gross relief from the cap cut.** 5.75% × $97,218,696 × 9/12 ≈ $4.19M in TSD FY2026; a full year ≈ $5.59M. The FY2025 147a(4) was $5,055,278. 147a(4) "represented approximately 5.75 percent of the School District's 2024 MPSERS-related payroll" **[S5 p11/9]**.
 2. **The funding progress is real in TSD's audits.**
    - Pension fiduciary net position rose from 60.77% (9/30/2022) to 79.44% (9/30/2025).
@@ -347,7 +352,7 @@ The 147c pass-through (FY2026: $13,805,287) would also end. GF revenue and expen
 - **TSD's total MPSERS/retirement budget in dollars** for any year. TSD shows only "Employee Benefits" totals (e.g., FY25 proposed $67,671,683 **[S17 p12]**) and amendment changes.
 - **TSD's budgeted 147c revenue levels.** Only changes are shown: −$7.82m in FY2025 Amendment 1, and +$605,680 of expenditure to match revenue in FY2026 Amendment 1.
 - **MPSERS assumptions inside TSD's multi-year forecasts** (Feb 2026, June 2023, Apr 2022): none stated.
-- **147a(1), 147a(2) and 147g amounts received in FY2023–FY2025.**
+- ~~147a(1), 147a(2) and 147g amounts received in FY2023–FY2025.~~ **Found for FY2025 and FY2026** (2026-11-18) in MDE's State Aid Financial Status Reports; see section 6. Earlier years are in the same archive (`ALL2411.pdf`, `ALL2311.pdf`, …) but were not pulled.
 - **Final MPSERS rates for October 2026 to September 2027.** Only the Governor's proposal (27.51% Basic/MIP w/PS; 13.51% 147c) appears, in Oakland Schools' March 2026 book. The FY2026 audit lists rates only through September 30, 2026.
 - **Whether TSD's FY2026 original budget assumed 20.96% or 15.21%.** It cannot be determined, so the source of the "unanticipated increases" cannot be pinned down.
 - **Any TSD mention of 2038, a UAAL payoff, or pension full funding.** None found.
