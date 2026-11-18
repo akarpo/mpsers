@@ -43,9 +43,15 @@ business office.
 ## Corrections
 
 - **2026-11-18:** Troy's net MPSERS cost after state offsets was first shown as flat (27.24% →
-  27.27% of payroll). It subtracted only some of the state's offsets. With every offset from MDE's
-  State Aid Financial Status Reports it rose from 20.2% to 23.1% (about $3.7M). The page carries a
-  dated correction note.
+  27.27% of payroll); it subtracted only some of the state's offsets. A first correction, using MDE's
+  State Aid Financial Status Reports, showed 20.2% → 23.1% (+$3.7M) but counted Section 147g, which
+  districts had to pass on to employees. Corrected again: 22.0% → 23.1%, about $2.0M more. The page
+  carries a dated note.
+- **2026-11-18, independent fact-check pass:** fixed a quote stitched from two paragraphs of the
+  release; added the $300M/$200M/$425M extra deposits; "2038" is the funding-policy deadline, not
+  "law"; returns trail peers over 3 years; "nearly half" includes hedge funds; PA 127's retiree-health
+  changes stated exactly; Troy's $12M target is a proposal to the board; 2-year (not 3) timing shift;
+  "$14.8M" in the Troy heading; market-value estimate "just under 89%".
 
 ## When the numbers will change
 

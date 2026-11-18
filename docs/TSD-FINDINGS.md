@@ -244,7 +244,7 @@ Of the PA 127 of 2024 provisions (from the MPSERS valuation):
 - **147c(2) one-time deposits** are the same kind of pass-through: $9,076,463 in FY2023 **[S4 p52/34]** and $2,113,411 in FY2025 **[S2 p53/34]**. "Ultimately, there is no impact to fund balance of the School District." **[S5 p11/9]**
 - **147a(1), 147a(4), 27l(4) and 147a(2)** are true offsets: GF revenue with no matching pass-through expenditure.
   - Documented amounts: 147a(4) $5,055,278 in FY2025; 147a(1) $1,007,246 in the FY2026 original budget, then eliminated; 27l(4) $1,326,153 in FY2026; a 147a(2) "$0.5 million" prior-year adjustment in FY2026.
-  - 147e (defined-contribution reimbursement) and 147g (employee health-care reimbursement) are offsets too.
+  - 147e (defined-contribution reimbursement) is an offset too. 147g (FY2025 only) is **not**: districts had to pass it to employees **[S5 p12/10]**.
   - FY2025 and FY2026 amounts for every one of these are now in section 6, from MDE's State Aid Financial Status Reports. The archive is at `https://mdoe.state.mi.us/samspublic/Home/StatusArchiveReport`; the final report for each year is `ALL<yy>11.pdf`.
 - **147g** reimbursed employees for their 3% OPEB contribution in FY2025 and did not fund operations **[S5 p12/10]**. FY2025 amendment: "147g 3% Reimburse ($1.6m)" **[S15 p9]**. FY2026: "$0.6 million reduction in Sec. 147g" **[S1 p65/48]**.
 
@@ -329,14 +329,16 @@ The 147c pass-through (FY2026: $13,805,287) would also end. GF revenue and expen
      - "Employees no longer contributing 3% healthcare premium, which has been absorbed by the employer" **[S7 p5]**;
      - an FY2026 "RETIREMENT ADJUSTMENT 3,612,635 … unanticipated increases in employer contribution rates" **[S7 p11]**.
    - **Calc: TSD-funded MPSERS net of ALL state MPSERS offsets** (corrected 2026-11-18; amounts from MDE's State Aid Financial Status Reports for Troy, 63150).
-     - FY2025 offsets: 147a(1) $1,007,246.18 + 147a(2) $3,503,425.81 + 147a(4) $5,055,278.16 + 147e $404,529.41 + 147g $1,634,235.39 = $11,604,714.95 **[MDE 2024-25 status report, p. 1127/1779]**.
+     - FY2025 offsets: 147a(1) $1,007,246.18 + 147a(2) $3,503,425.81 + 147a(4) $5,055,278.16 + 147e $404,529.41 = $9,970,479.56 **[MDE 2024-25 status report, p. 1127/1779]**.
+     - **147g ($1,634,235.39) is excluded:** it was a pass-through to employees. "School districts received this funding and were required to use it to reimburse employees; therefore, this funding did not provide additional resources to the School District for general operating purposes." **[S5 p12/10]**
      - FY2026 offsets: 147a(2) $3,673,667.34 + 147e $397,455.73 **[MDE 2025-26 status report, p. 1128/1780]** + 27l(4) $1,326,153 **[S7 p8]** = $5,397,276.07. The 2025-26 report has no 147a(1), 147a(4) or 147g line.
-     - FY2025: $30,371,009 − $11,604,715 = $18,766,294, or **20.20%** of payroll.
+     - FY2025: $30,371,009 − $9,970,480 = $20,400,529, or **21.95%** of payroll.
      - FY2026: $27,837,681 − $5,397,276 = $22,440,405, or **23.08%** of payroll.
-     - **Troy's own MPSERS cost rose by $3,674,111 (+2.89 points of payroll)** in the first, partial (9-month) year of the lower cap. Gross TSD-funded cost fell $2,533,328, but the state's offsets fell $6,207,439.
+     - **Troy's own MPSERS cost rose by $2,039,876 (+1.13 points of payroll)** in the first, partial (9-month) year of the lower cap. TSD-funded cost net of pass-throughs fell $2,533,328, but the state's offsets fell $4,573,203.
+     - Caveat: FY2026 147a(2) is the state's allocation. TSD's FY2026 audit mentions "a $0.5 million Sec. 147a(2) prior year adjustment"; if it is inside the state figure, FY2026 offsets are overstated by about $0.5M and the rise would be about $2.5M.
      - This matches TSD's own description ("Retirement and health-care costs once covered by State have been shifted to the employer").
      - The status report's 147c(1) amounts match the audits to the dollar ($9,297,728.91 and $13,805,286.56), which supports pairing the state FY report with the same-numbered TSD FY.
-     - **Superseded:** the first version of this calc subtracted only 147a(4) (FY2025) and 27l(4) (FY2026) and reported 27.24% vs. 27.27%, "essentially unchanged". It omitted 147a(1) and 147g in FY2025, and 147a(2) and 147e in both years.
+     - **Superseded twice:** the first version subtracted only 147a(4) (FY2025) and 27l(4) (FY2026) and reported 27.24% vs. 27.27%, "essentially unchanged". The second counted 147g as an offset and reported 20.2% → 23.1% (+$3.7M).
    - **Calc: gross relief from the cap cut.** 5.75% × $97,218,696 × 9/12 ≈ $4.19M in TSD FY2026; a full year ≈ $5.59M. The FY2025 147a(4) was $5,055,278. 147a(4) "represented approximately 5.75 percent of the School District's 2024 MPSERS-related payroll" **[S5 p11/9]**.
 2. **The funding progress is real in TSD's audits.**
    - Pension fiduciary net position rose from 60.77% (9/30/2022) to 79.44% (9/30/2025).

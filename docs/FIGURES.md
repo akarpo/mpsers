@@ -23,7 +23,7 @@ Page numbers are the document's printed page labels; "PDF p." is the page in the
 | Funding value of assets, 9/30/2025 | $73,677,430,627 | VAL25, line (8) |
 | UAAL, 9/30/2025 | $25,118,148,358 | VAL25, line (9) |
 | Funded ratios 2015–2024 (restated where a second row exists) | 60.5, 59.7, 61.6, 60.7, 60.4, 60.9, 64.1, 64.3, 68.8, 71.2 | ACFR25 p. 98 (PDF p. 104), Schedule of Funding Progress |
-| Initial-layer payoff "no later than the end of fiscal year 2038" | quote | VAL25, Measures of Financial Soundness, item (3) |
+| Initial-layer payoff "no later than the end of fiscal year 2038" | quote | VAL25, Measures of Financial Soundness, item (3); p. A-9 ("expected to be fully amortized no later than the end of fiscal year 2038"). The page calls 2038 the deadline in the funding policy; only the release says "under current law". |
 | Retiree-health funded ratio, 9/30/2025 | 150.64% | OPEB25, line F. Funded Ratio |
 
 ## Back-of-envelope estimate (ours, labeled on the page)
@@ -32,7 +32,7 @@ Page numbers are the document's printed page labels; "PDF p." is the page in the
 |---|---|---|
 | Pension net position, 9/30/2025 | $78,656,194K | ACFR25 p. 21 (PDF p. 27) |
 | FY2025 pension contributions / deductions | $4,901,829K / $5,829,809K | ACFR25 p. 21 |
-| Total normal cost rate × DB payroll | 13.79% × $9,798,283,874 | VAL25 lines (2) and (5) |
+| Total normal cost rate × DB payroll | 13.79% × $9,798,283,874 | VAL25 lines (2) and (5). The payroll is VAL25's projected payroll for the FY2028 contribution year, used here as a proxy for FY2026; the result moves by about 0.05 point. |
 | FY2026 return | 14% (SMRS-wide) | PR |
 
 Method: assets × 1.14 plus net cash flow (mid-year); liability × 1.06 plus normal cost minus benefits (mid-year). Result: 88.6%. Roll-forward: benefits +3%/yr, normal cost +2.75%/yr, debt payment held at $3.187B. Years to 100%: FY2031 at 6%, FY2029 at 7.5%, after FY2035 at 4%.
@@ -53,6 +53,8 @@ Method: assets × 1.14 plus net cash flow (mid-year); liability × 1.06 plus nor
 | Normal cost kept until 120% funded | | VAL25 Section G, Funding Policy, Funding Security 1 |
 | Extra $250M for FY2025 | | VAL25 Executive Summary item 7, PA 120 of 2024 |
 | FY2023 one-time deposits: $1B + $140M into MPSERS | | SMIB0326 slide 5 |
+| Other extra deposits: $300M (FY2022) and $200M (FY2023) to reduce the University UAAL; $425M "to be contributed before the end of fiscal year 2026" to offset the faster move to level-dollar amortization | | VAL25 Appendix-5 (PA 144 of 2022; PA 198 of 2023) |
+| PA 127 of 2024 also: "Effective fiscal year 2026, the 3% employee contribution requirement for premium subsidy retiree medical coverage will be eliminated"; "the employer normal cost contribution floor will be removed for the retiree health plan" | quote | VAL25 Appendix-6, items (3) and (4) |
 | $3.2B; state ~$1.5B, districts ~$1.7B | | PR |
 | "$3.5 billion is added to the budget annually" for every year sooner | quote | SMIB0326 slide 2 |
 
@@ -96,7 +98,9 @@ Method: assets × 1.14 plus net cash flow (mid-year); liability × 1.06 plus nor
 | PA 92 of 2017 signed July 13, 2017 | ACFR25, Pension Reform of 2017 |
 | MARSP: "on track to pay off all pension debt by 2035" (July 21, 2026) | marsp.org, "Legislative Update: Michigan FY 2027 Budget Keeps MPSERS Funding on Track" |
 | SMIB meeting Dec. 16, 2026 | michigan.gov SMIB 2026 meeting schedule |
-| Election Nov. 3, 2026; release Nov. 17, 2026 | PR |
+| Election Nov. 3, 2026 | Michigan general election date (first Tuesday after the first Monday of November). Not in the release. |
+| Release Nov. 17, 2026 | PR |
+| Governor "term-limited"; successor takes office Jan. 2027 | Mich. Const. art. V, sec. 30 (two terms; Whitmer elected 2018 and 2022); terms begin Jan. 1 after the election. The release says "Gov.-elect" and "closing out your term". |
 
 ## Troy School District
 
@@ -117,7 +121,7 @@ The full research notes, including by-year tables, every quote and 36 cited docu
 | Forecast operating deficits 26-27 / 27-28 / 28-29 | (5,838,185) / (6,190,566) / (5,848,198) | "TSD - 4-Year General Fund Forecast, February 2026" (Mar. 7, 2026 retreat), rendered and checked |
 | "$12 million in reductions" | quote | TSD Budget Amendment 2, Mar. 17, 2026, p. 10 |
 | 147a(4) $5,055,278; "Essentially one-time money" | quote | TSD budget presentation Jan. 20, 2026, p. 4; Plante Moran FY2025 management letter p. 11 (printed 9) |
-| "Rather than a traditional increase to the foundation allowance" | quote | TSD FY2024 audit MD&A (PDF p. 28, printed p. 9) |
+| "Rather than a traditional increase to the foundation allowance" | quote | TSD FY2024 audit MD&A (PDF p. 28, printed p. 9); `sources/troy/TSD-FY2024-Audit.pdf` |
 | RETIREMENT ADJUSTMENT 3,612,635, "unanticipated increases in employer contribution rates" | quote | TSD budget presentation Jan. 20, 2026, p. 11 |
 | "Retirement and health-care costs once covered by State have been shifted to the employer" | quote | "Board Budget Planning" .pptx, Jan. 13, 2026, slide 2 (checked in the slide XML) |
 | July 2026 scenarios: reductions $12M (26-27), then $7M/$7M (no millage; or millage, scenario 2) or $3M/$3M (millage, scenario 3); no MPSERS line | | "General Fund Scenarios 4-year", July 22, 2026 board meeting (rendered and checked); `sources/troy/TSD-General-Fund-Scenarios-2026-07-22.pdf` |
@@ -126,9 +130,29 @@ The full research notes, including by-year tables, every quote and 36 cited docu
 | "State eliminated 147a(1) at the last minute ($1,007,246)"; "Employees no longer contributing 3% healthcare premium, which has been absorbed by the employer" | quote | TSD budget presentation Jan. 20, 2026, p. 5 |
 | First partial year of relief ≈ $11.1M (calc) | 0.75 × $14,786,964 | calc: Oct. 2030–June 2031 is 9 of TSD FY2031's 12 months |
 | Pension NPL sensitivity: $271,696,844 (1 pt lower) / $172,171,957 / $89,280,466 (1 pt higher) | | TSD FY2026 audit, pension note, discount-rate sensitivity |
+| Debt charge as share of GF spending: 7.3% (calc) | 14,786,964 ÷ 202,195,371 = 7.31% | calc |
+| 2.4–2.5× the February forecast deficits (calc) | 14,786,964 ÷ 6,190,566 = 2.39; ÷ 5,838,185 = 2.53 | calc |
+| 1.2× the $12M target (calc) | 14,786,964 ÷ 12,000,000 = 1.23 | calc |
+| Relief around 2032–33 if "2030" is a valuation date (calc) | 9/30/2030 valuation sets FY2033 rates (same 3-year lag as 9/30/2025 → FY2028) | calc |
+| "regional enhancement millage proposal on the August 4, 2026 ballot" for "Oakland County voters" | quote | TSD Board resolution, Feb. 24, 2026, item 8.B (`2026-02-24_Regular Meeting.../8.B. Summary Resolution Requesting Enhancement Millage Proposal (002).docx`) |
 | Dan Trudel, CPA, Assistant Superintendent for Business Services; Board Treasurer | | Board appointment June 20, 2024 (agenda item 7.B); treasurer appointments Jan. 21, 2025; FY2026 audit letter of transmittal (signed "Dan Trudel, CPA") |
-| State MPSERS offsets to Troy, 2024–25: 147a(1) $1,007,246.18; 147a(2) $3,503,425.81; 147a(4) $5,055,278.16; 147e $404,529.41; 147g $1,634,235.39 (also 147c(1) $9,297,728.91 and 147c(2) $2,113,410.60 pass-throughs) | | MDE 2024-2025 State Aid Financial Status Report, payment dated 08/20/2025, p. 1127/1779 (Troy, 63150), `ALL2511.pdf` from the SAMS status archive; Troy page saved as `sources/troy/MDE-State-Aid-Status-Report-2024-25-Troy-63150.pdf` |
+| State MPSERS offsets to Troy, 2024–25: 147a(1) $1,007,246.18; 147a(2) $3,503,425.81; 147a(4) $5,055,278.16; 147e $404,529.41 = $9,970,479.56. Pass-throughs, not counted: 147c(1) $9,297,728.91, 147c(2) $2,113,410.60, and 147g $1,634,235.39 (see next row) | | MDE 2024-2025 State Aid Financial Status Report, payment dated 08/20/2025, p. 1127/1779 (Troy, 63150), `ALL2511.pdf` from the SAMS status archive; Troy page saved as `sources/troy/MDE-State-Aid-Status-Report-2024-25-Troy-63150.pdf` |
+| 147g is a pass-through to employees: "This funding was new in 2024/2025 and was for reimbursing employees for their 3 percent employer contribution to the OPEB plan. School districts received this funding and were required to use it to reimburse employees; therefore, this funding did not provide additional resources to the School District for general operating purposes." | quote | Plante Moran FY2025 management letter, printed p. 10 (PDF p. 12) |
 | State MPSERS offsets to Troy, 2025–26: 147a(2) $3,673,667.34; 147e $397,455.73; no 147a(1), 147a(4) or 147g line (147c(1) $13,805,286.56 pass-through) | | MDE 2025-2026 State Aid Financial Status Report, payment dated 08/20/2026, p. 1128/1780, `ALL2611.pdf`; saved as `sources/troy/MDE-State-Aid-Status-Report-2025-26-Troy-63150.pdf` |
 | 27l(4) MPSERS health-care offset 2025–26: $1,326,153 | | TSD budget presentation Jan. 20, 2026, p. 8; FY2026 audit notes to RSI ("new Sec. 27l(4) MPSERS health care offset funding of $1.3 million"). Not on the status report. |
-| Troy's own MPSERS cost after all state offsets: $18,766,294 = 20.2% of payroll (2024–25) vs. $22,440,405 = 23.1% (2025–26); +$3,674,111 (calc) | (38,371,759 + 3,410,390 − 9,297,729 − 2,113,411) − 11,604,714.95 = 18,766,294 ÷ 92,923,328; (38,592,217 + 3,050,751 − 13,805,287) − (3,673,667.34 + 397,455.73 + 1,326,153) = 22,440,405 ÷ 97,218,696 | TSD FY2025 and FY2026 audits; offsets from the rows above. Gross Troy-funded cost fell $2,533,328; offsets fell $6,207,439. |
+| Caveat: 147a(2) 2025–26 uses the state's allocation ($3,673,667.34). Troy's FY2026 audit also mentions "a $0.5 million Sec. 147a(2) prior year adjustment"; if that is inside the state figure, 2025–26 offsets are overstated by about $0.5M. Asked in Troy question 4. | | FY2026 audit notes to RSI (PDF p. 65) |
+| Troy's own MPSERS cost after state offsets: $20,400,529 = 22.0% of payroll (2024–25) vs. $22,440,405 = 23.1% (2025–26); +$2,039,876 (calc) | (38,371,759 + 3,410,390 − 9,297,729 − 2,113,411) − 9,970,479.56 = 20,400,529 ÷ 92,923,328; (38,592,217 + 3,050,751 − 13,805,287) − (3,673,667.34 + 397,455.73 + 1,326,153) = 22,440,405 ÷ 97,218,696 | TSD FY2025 and FY2026 audits; offsets from the rows above. Troy-funded cost net of pass-throughs (pension + retiree health) fell $2,533,328; offsets fell $4,573,203. |
+| **Superseded (Nov. 18, 2026, second correction):** 20.2% → 23.1%, +$3.7M, offsets fell $6.2M | | Counted 147g ($1,634,235) as an offset; it is a pass-through to employees (row above). Found by the independent fact-check. |
 | **Superseded (Nov. 18, 2026):** 27.24% vs. 27.27% "essentially unchanged" | | Subtracted only 147a(4) (FY2025) and 27l(4) (FY2026). It omitted 147a(1) and 147g in FY2025 and 147a(2) and 147e in both years. Corrected on the page with a visible note. |
+
+## Other figures
+
+| Figure | Value | Source |
+|---|---|---|
+| MPSERS covers "more than 400,000 current and retired public school employees" | quote | PR |
+| $598 million in ongoing savings passed to schools from FY2025 | | PR; Plante Moran FY2025 management letter, printed p. 9 ("about $598 million") |
+| $15.7B state-level contributions; $43.7B total contributions | | PR (not checked against an independent source; the page says so) |
+| "under a fifth of the pool" (13F reportable securities) | $22,595,236,086 ÷ $122.4B = 18.5% (calc) | 13F cover totals; SMIB0326 slide 3 |
+| Aon ran the forecast "thousands of times" | up to 5,000 trials | AON25 PDF p. 8 |
+| "nearly half in private markets and hedge funds" | 47.2% = PE 20.4 + RR&O 8.8 + RE&I 7.9 + absolute return 10.1 | SMIB0326 slide 3 (private assets alone are 37.1%) |
+| Returns vs. peer median: ahead over 1/5/7/10 years, behind over 3 years (11.5% vs. 11.8%) | | SMIB0326 slide 2; peer universe footnote: "State Street Peer Universe greater than $10 billion" |
