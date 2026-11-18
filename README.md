@@ -1,6 +1,6 @@
 # mpsers
 
-**Live:** <https://mpsers.karpowitsch.org>
+**Live:** <https://tsd-mpsers.karpowitsch.org>
 
 An independent, source-linked check of the Governor's Nov. 17, 2026 announcement that
 Michigan's school pension (MPSERS) is "fully funded ahead of schedule." It goes claim by claim
@@ -30,5 +30,5 @@ and also covers what the pooled State of Michigan Retirement Systems fund holds.
 
 ## Hosting
 
-Cloudflare Pages project `mpsers`, Git-connected to `akarpo/mpsers` (`main`), with the custom
-domain `mpsers.karpowitsch.org`. A push to `main` deploys.
+Cloudflare Pages project `tsd-mpsers`, Git-connected to `akarpo/mpsers` (`main`), with the custom
+domain `tsd-mpsers.karpowitsch.org`. A push to `main` deploys.
