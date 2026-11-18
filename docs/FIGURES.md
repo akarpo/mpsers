@@ -97,3 +97,27 @@ Method: assets × 1.14 plus net cash flow (mid-year); liability × 1.06 plus nor
 | MARSP: "on track to pay off all pension debt by 2035" (July 21, 2026) | marsp.org, "Legislative Update: Michigan FY 2027 Budget Keeps MPSERS Funding on Track" |
 | SMIB meeting Dec. 16, 2026 | michigan.gov SMIB 2026 meeting schedule |
 | Election Nov. 3, 2026; release Nov. 17, 2026 | PR |
+
+## Troy School District
+
+The full research notes, including by-year tables, every quote and 36 cited documents, are in `docs/TSD-FINDINGS.md`. Copies of the key files are in `sources/troy/`. The TSD archive's PDF URLs begin with `https://media.karpowitsch.org/troysd-boarddocs/`.
+
+| Figure | Value | Source |
+|---|---|---|
+| Pension contributions FY2026 (incl. DC members) | $38,592,217 | TSD FY2026 audit, pension note (PDF p. 53, printed p. 36) |
+| of which 147c UAAL-stabilization pass-through | $13,805,287 | same |
+| OPEB contributions FY2026 | $3,050,751 | TSD FY2026 audit, OPEB note |
+| Covered payroll FY2026 | $97,218,696 | TSD FY2026 audit, RSI (PDF p. 62) |
+| Net pension liability share / proportion | $172,171,957 / 0.85944% | TSD FY2026 audit (PDF p. 54 and p. 61) |
+| Net pension liability share, FY2023 | $340,447,659 | TSD FY2023 audit; FY2026 audit RSI 10-year schedule |
+| GF expenditures / net change in fund balance FY2026 | $202,195,371 / $(2,385,591) | TSD FY2026 audit, GF budgetary comparison (PDF p. 60) |
+| Troy-funded MPSERS FY2026 (calc) | 38,592,217 + 3,050,751 − 13,805,287 = $27,837,681 (28.63%) | calc |
+| Debt charge that would end (calc) | 15.21% × $97,218,696 = $14,786,964 | calc; 15.21% cap from VAL25 Appendix-6 (PA 127 of 2024), confirmed in the TSD Jan. 20, 2026 slide ("Pension UAAL expenditures for districts reduced by 5.75%") |
+| Cross-check (calc) | 0.85944% × $1.7B = $14,610,480 | calc |
+| Forecast operating deficits 26-27 / 27-28 / 28-29 | (5,838,185) / (6,190,566) / (5,848,198) | "TSD - 4-Year General Fund Forecast, February 2026" (Mar. 7, 2026 retreat), rendered and checked |
+| "$12 million in reductions" | quote | TSD Budget Amendment 2, Mar. 17, 2026, p. 10 |
+| 147a(4) $5,055,278; "Essentially one-time money" | quote | TSD budget presentation Jan. 20, 2026, p. 4; Plante Moran FY2025 management letter p. 11 (printed 9) |
+| "Rather than a traditional increase to the foundation allowance" | quote | TSD FY2024 audit MD&A (PDF p. 28, printed p. 9) |
+| RETIREMENT ADJUSTMENT 3,612,635, "unanticipated increases in employer contribution rates" | quote | TSD budget presentation Jan. 20, 2026, p. 11 |
+| "Retirement and health-care costs once covered by State have been shifted to the employer" | quote | "Board Budget Planning" .pptx, Jan. 13, 2026, slide 2 (checked in the slide XML) |
+| Net MPSERS cost after state offsets: 27.24% (FY2025) vs. 27.27% (FY2026) (calc) | (38,371,759 + 3,410,390 − 9,297,729 − 2,113,411 − 5,055,278) ÷ 92,923,328; (38,592,217 + 3,050,751 − 13,805,287 − 1,326,153) ÷ 97,218,696 | TSD FY2025 and FY2026 audits; 27l(4) $1,326,153 from the Jan. 20, 2026 presentation. The FY2025 147a(1) amount was not found. |
