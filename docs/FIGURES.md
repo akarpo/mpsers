@@ -120,4 +120,11 @@ The full research notes, including by-year tables, every quote and 36 cited docu
 | "Rather than a traditional increase to the foundation allowance" | quote | TSD FY2024 audit MD&A (PDF p. 28, printed p. 9) |
 | RETIREMENT ADJUSTMENT 3,612,635, "unanticipated increases in employer contribution rates" | quote | TSD budget presentation Jan. 20, 2026, p. 11 |
 | "Retirement and health-care costs once covered by State have been shifted to the employer" | quote | "Board Budget Planning" .pptx, Jan. 13, 2026, slide 2 (checked in the slide XML) |
+| July 2026 scenarios: reductions $12M (26-27), then $7M/$7M (no millage; or millage, scenario 2) or $3M/$3M (millage, scenario 3); no MPSERS line | | "General Fund Scenarios 4-year", July 22, 2026 board meeting (rendered and checked); `sources/troy/TSD-General-Fund-Scenarios-2026-07-22.pdf` |
+| "Structural balance", "15% fund balance" reduction targets | quote | TSD Budget Amendment 2, Mar. 17, 2026, p. 10; `sources/troy/TSD-Budget-Amendment-2-2026-03-17.pdf` |
+| $3,612,635 note: "Amended retirement costs to reflect actual attrition and unanticipated increases in employer contribution rates" | quote | TSD budget presentation Jan. 20, 2026, p. 11 |
+| "State eliminated 147a(1) at the last minute ($1,007,246)"; "Employees no longer contributing 3% healthcare premium, which has been absorbed by the employer" | quote | TSD budget presentation Jan. 20, 2026, p. 5 |
+| First partial year of relief ≈ $11.1M (calc) | 0.75 × $14,786,964 | calc: Oct. 2030–June 2031 is 9 of TSD FY2031's 12 months |
+| Pension NPL sensitivity: $271,696,844 (1 pt lower) / $172,171,957 / $89,280,466 (1 pt higher) | | TSD FY2026 audit, pension note, discount-rate sensitivity |
+| Dan Trudel, CPA, Assistant Superintendent for Business Services; Board Treasurer | | Board appointment June 20, 2024 (agenda item 7.B); treasurer appointments Jan. 21, 2025; FY2026 audit letter of transmittal (signed "Dan Trudel, CPA") |
 | Net MPSERS cost after state offsets: 27.24% (FY2025) vs. 27.27% (FY2026) (calc) | (38,371,759 + 3,410,390 − 9,297,729 − 2,113,411 − 5,055,278) ÷ 92,923,328; (38,592,217 + 3,050,751 − 13,805,287 − 1,326,153) ÷ 97,218,696 | TSD FY2025 and FY2026 audits; 27l(4) $1,326,153 from the Jan. 20, 2026 presentation. The FY2025 147a(1) amount was not found. |
